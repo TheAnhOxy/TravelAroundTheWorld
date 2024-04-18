@@ -1,0 +1,97 @@
+<!-- /*tiktok*/
+/* ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+li {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #474644;
+    border-radius: 15px;
+    border-bottom: 5px solid #33322f;
+    border-left: 3px solid #000000;
+    box-shadow: -3px 5px 10px 3px #33322f80, 5px -5px 20px 10px #33322f80, 0px 2px 1px #000000b3;
+    transition: transform 0.15s ease-in-out;
+}
+a{
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+i{
+    color: #858482;
+    text-shadow: 0px 0px #504F4E, 0px 1px #424241, -1px 1px #353534, -2px 3px #282827, 0px 6px 5px #33322fcc;
+}
+
+.tiktok:hover i{
+    text-shadow: 0px 0px #C42829, 0px 1px #AE2425, -1px 2px #991F20, -2px 3px #831B1C, 0px 6px 5px #33322fcc, 0 0 1em #ff0050;
+    color: #ff0050;
+}
+
+.twitter:hover i{
+    text-shadow: 0px 0px #34AEDF, 0px 1px #2E9AC6, -1px 2px #2987AE, -2px 3px #237495, 0px 6px 5px #33322fcc, 0 0 1em #3ac1f8;
+    color: #3ac1f8;
+}
+
+.facebook:hover i{
+    text-shadow: 0px 0px #394C89, 0px 1px #32447A, -1px 2px #2C3B6A, -2px 3px #26335B, 0px 6px 5px #33322fcc, 0 0 1em #4267B2;
+    color: #4267B2;
+} */
+
+
+<!-- /*tiktok*/
+.id1{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+#k1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #474644;
+    border-radius: 15px;
+    border-bottom: 5px solid #33322f;
+    border-left: 3px solid #000000;
+    box-shadow: -3px 5px 10px 3px #33322f80, 5px -5px 20px 10px #33322f80, 0px 2px 1px #000000b3;
+    transition: transform 0.15s ease-in-out;
+}
+#id2{
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#id3{
+    color: #858482;
+    text-shadow: 0px 0px #504F4E, 0px 1px #424241, -1px 1px #353534, -2px 3px #282827, 0px 6px 5px #33322fcc;
+}
+
+.tiktok:hover #id3{
+    text-shadow: 0px 0px #C42829, 0px 1px #AE2425, -1px 2px #991F20, -2px 3px #831B1C, 0px 6px 5px #33322fcc, 0 0 1em #ff0050;
+    color: #ff0050;
+}
+
+.twitter:hover #id3{
+    text-shadow: 0px 0px #34AEDF, 0px 1px #2E9AC6, -1px 2px #2987AE, -2px 3px #237495, 0px 6px 5px #33322fcc, 0 0 1em #3ac1f8;
+    color: #3ac1f8;
+}
+
+.facebook:hover #id3{
+    text-shadow: 0px 0px #394C89, 0px 1px #32447A, -1px 2px #2C3B6A, -2px 3px #26335B, 0px 6px 5px #33322fcc, 0 0 1em #4267B2;
+    color: #4267B2;
+}

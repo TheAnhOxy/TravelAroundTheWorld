@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <link rel="icon" href="../IMG/viet2.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/form_tour.css">
+
+    <title>Booking-Tour</title>
+</head>
+<body>
+
+    
+    <div class="container " >
+        <div class="nav">
+            <nav class="navbar navbar-expand-md ">
+              <a href="../HTML/index.html"><img id="img1" src="../IMG/2.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Du Lịch</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../HTML/DulichTrongNuoc.html" class="dropdown-item">Du Lịch Trong Nước</a></li>
+                            <li><a href="../HTML/DulichNgoaiNuoc.html" class="dropdown-item">Du Lịch Ngoài Nước</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Vận chuyển</a>
+                      <ul class="dropdown-menu">
+                          <li><a href="../HTML/VanChuyen.html" class="dropdown-item">Thuê Máy Bay</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" sp><a href="Tintuc.html" class="nav-link">Tin Tức</a></li>
+                    <li class="nav-item" sp><a href="KhuyenMai.html" class="nav-link">Khuyến Mãi</a></li>
+                    <li class="nav-item" sp><a href="lienHe.html" class="nav-link">Liên Hệ</a></li>
+                    <!-- <input id="in1" type="text" placeholder="Bắt đầu tìm kiếm ...">
+                    <button id="bt1">Tìm</button> -->
+                </ul>
+                <div id="modal1">
+                    <button
+                        class="btn btn-img"
+                        data-bs-toggle="modal"
+                        data-bs-target="#userForm"
+                    >
+                        <img src="../IMG/log.jpg" alt="log" class="img-fluid  rounded-circle" style="width: 40px; height: 40px; object-fit: cover;" title="Login">
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <hr>
+        <div class="location">
+            <a href="index.html">Trang chủ</a> > 
+            <a href="DulichNgoaiNuoc.html">Du lịch ngoài nước</a> >
+            <a href="ChauAu.html">Tour Châu Âu</a>
+        </div>
+        <hr>
+        <img src="../gif/see.gif" alt="" class="img-fluid" id="see">
+
+        <!-- Form Anh tour start -->
+        <div class="container" id="check3">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../IMG/ts3.jpg" height="" alt="" class="img-fluid rounded border  float-start" id="anh1">
+                </div>
+                <div class="col-md-8 border" id="check1">
+                    <i class="fa-regular fa-star" id="star"></i> <h2 class="kl">Tuyệt vời &nbsp;<span id="qt">19.221 quan tâm</span></h2> 
+                   <h2 class="kl"> Nga -  Cung điện Kremlin Moscow - Bãi biển Sochi  -  Tháp Ostankino - Núi lửa Krenitsyn đảo Onekotan </h2>
+                   
+                   <span>Mã tour &nbsp; &nbsp;  <b>GSAGH1566-421-19052024RS-V</b></p></span>
+                   <span>Khởi hành &nbsp; &nbsp;  <b>19/05/2024</b></p></span>
+                   <span>Thời gian &nbsp; &nbsp;  <b> 8 ngày 7 đêm</b></p></span>
+                   <span>Nơi khởi hành &nbsp; &nbsp;  <b>Hà Nội</b></p></span>
+                   <span>Số chỗ còn nhận &nbsp; &nbsp;  <b>17</b></p></span>
+                   <span>Dịch vụ tùy chọn &nbsp; &nbsp;  <b>Bay Vietnam Airlines - Khách sạn 5*</b></p></span>
+                 
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Tổng quan về chuyến đi</h1>
+            <br>
+           
+           
+
+            <!-- Form dki tour start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form id="tourRegistrationForm">
+                            <div class="row">
+                                <div class=" col-md-6">
+                                    <label for="fullName">Họ và tên:</label>
+                                    <input type="text" class="form-control" id="fullName" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="phone">Số điện thoại:</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="address">Địa chỉ:</label>
+                                    <input type="text" class="form-control" id="address" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="nationality">Quốc tịch:</label>
+                                    <select id="nationality" class="form-control" required>
+                                        <option value="" selected disabled>Chọn quốc tịch</option>
+                                        <optgroup label="Châu Á">
+                                            <option value="Afghanistan">Afghanistan</option>
+                                            <option value="Bahrain">Bahrain</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="Bhutan">Bhutan</option>
+                                            <option value="Brunei">Brunei</option>
+                                            <option value="Cambodia">Cambodia</option>
+                                            <option value="China">China</option>
+                                            <option value="India">India</option>
+                                            <option value="Indonesia">Indonesia</option>
+                                            <option value="Iran">Iran</option>
+                                            <option value="Iraq">Iraq</option>
+                                            <option value="Israel">Israel</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Jordan">Jordan</option>
+                                            <option value="Kazakhstan">Kazakhstan</option>
+                                            <option value="Kuwait">Kuwait</option>
+                                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                            <option value="Laos">Laos</option>
+                                            <option value="Lebanon">Lebanon</option>
+                                            <option value="Malaysia">Malaysia</option>
+                                            <option value="Maldives">Maldives</option>
+                                            <option value="Mongolia">Mongolia</option>
+                                            <option value="Myanmar (Burma)">Myanmar (Burma)</option>
+                                            <option value="Nepal">Nepal</option>
+                                            <option value="North Korea">North Korea</option>
+                                            <option value="Oman">Oman</option>
+                                            <option value="Pakistan">Pakistan</option>
+                                            <option value="Palestine">Palestine</option>
+                                            <option value="Philippines">Philippines</option>
+                                            <option value="Qatar">Qatar</option>
+                                            <option value="Saudi Arabia">Saudi Arabia</option>
+                                            <option value="Singapore">Singapore</option>
+                                            <option value="South Korea">South Korea</option>
+                                            <option value="Sri Lanka">Sri Lanka</option>
+                                            <option value="Syria">Syria</option>
+                                            <option value="Taiwan">Taiwan</option>
+                                            <option value="Tajikistan">Tajikistan</option>
+                                            <option value="Thailand">Thailand</option>
+                                            <option value="Timor-Leste">Timor-Leste</option>
+                                            <option value="Turkey">Turkey</option>
+                                            <option value="Turkmenistan">Turkmenistan</option>
+                                            <option value="United Arab Emirates (UAE)">United Arab Emirates (UAE)</option>
+                                            <option value="Uzbekistan">Uzbekistan</option>
+                                            <option value="Vietnam">Vietnam</option>
+                                            <option value="Yemen">Yemen</option>
+                                        </optgroup>
+                                        <optgroup label="Châu Âu">
+                                            <option value="Albania">Albania</option>
+                                            <option value="Andorra">Andorra</option>
+                                            <option value="Austria">Austria</option>
+                                            <option value="Belarus">Belarus</option>
+                                            <option value="Belgium">Belgium</option>
+                                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                            <option value="Bulgaria">Bulgaria</option>
+                                            <option value="Croatia">Croatia</option>
+                                            <option value="Cyprus">Cyprus</option>
+                                            <option value="Czech Republic">Czech Republic</option>
+                                            <option value="Denmark">Denmark</option>
+                                            <option value="Estonia">Estonia</option>
+                                            <option value="Finland">Finland</option>
+                                            <option value="France">France</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="Greece">Greece</option>
+                                            <option value="Hungary">Hungary</option>
+                                            <option value="Iceland">Iceland</option>
+                                            <option value="Ireland">Ireland</option>
+                                            <option value="Italy">Italy</option>
+                                            <option value="Kosovo">Kosovo</option>
+                                            <option value="Latvia">Latvia</option>
+                                            <option value="Liechtenstein">Liechtenstein</option>
+                                            <option value="Lithuania">Lithuania</option>
+                                            <option value="Luxembourg">Luxembourg</option>
+                                            <option value="Macedonia (FYROM)">Macedonia (FYROM)</option>
+                                            <option value="Malta">Malta</option>
+                                            <option value="Moldova">Moldova</option>
+                                            <option value="Monaco">Monaco</option>
+                                            <option value="Montenegro">Montenegro</option>
+                                            <option value="Netherlands">Netherlands</option>
+                                            <option value="Norway">Norway</option>
+                                            <option value="Poland">Poland</option>
+                                            <option value="Portugal">Portugal</option>
+                                            <option value="Romania">Romania</option>
+                                            <option value="Russia">Russia</option>
+                                            <option value="San Marino">San Marino</option>
+                                            <option value="Serbia">Serbia</option>
+                                            <option value="Slovakia">Slovakia</option>
+                                            <option value="Slovenia">Slovenia</option>
+                                            <option value="Spain">Spain</option>
+                                            <option value="Sweden">Sweden</option>
+                                            <option value="Switzerland">Switzerland</option>
+                                            <option value="Ukraine">Ukraine</option>
+                                            <option value="United Kingdom (UK)">United Kingdom (UK)</option>
+                                            <option value="Vatican City (Holy See)">Vatican City (Holy See)</option>
+                                        </optgroup>
+                                        <optgroup label="Châu Mỹ">
+                                            <option value="Argentina">Argentina</option>
+                                            <option value="Bolivia">Bolivia</option>
+                                            <option value="Brazil">Brazil</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Chile">Chile</option>
+                                            <option value="Colombia">Colombia</option>
+                                            <option value="Costa Rica">Costa Rica</option>
+                                            <option value="Cuba">Cuba</option>
+                                            <option value="Dominican Republic">Dominican Republic</option>
+                                            <option value="Ecuador">Ecuador</option>
+                                            <option value="El Salvador">El Salvador</option>
+                                            <option value="Guatemala">Guatemala</option>
+                                            <option value="Haiti">Haiti</option>
+                                            <option value="Honduras">Honduras</option>
+                                            <option value="Jamaica">Jamaica</option>
+                                            <option value="Mexico">Mexico</option>
+                                            <option value="Nicaragua">Nicaragua</option>
+                                            <option value="Panama">Panama</option>
+                                            <option value="Paraguay">Paraguay</option>
+                                            <option value="Peru">Peru</option>
+                                            <option value="United States of America (USA)">United States of America (USA)</option>
+                                            <option value="Uruguay">Uruguay</option>
+                                            <option value="Venezuela">Venezuela</option>
+                                        </optgroup>
+                                    </select>
+                                    
+                                </div>
+                                <div class=" col-md-6">
+                                    <label for="gender">Giới tính:</label>
+                                    <select id="gender" class="form-control" required>
+                                        <option value="" selected disabled>Chọn giới tính</option>
+                                        <option value="male">Nam</option>
+                                        <option value="female">Nữ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Form dki số lượng Start -->
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="adults">Người lớn:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button" id="subtractAdult">-</button>
+                                        </div>
+                                        <input type="number" class="form-control passenger-input" id="adults" min="0" value="0">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="addAdult">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label for="children">Trẻ em:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button" id="subtractChild">-</button>
+                                        </div>
+                                        <input type="number" class="form-control passenger-input" id="children" min="0" value="0">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="addChild">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label for="infants">Trẻ nhỏ:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button" id="subtractInfant">-</button>
+                                        </div>
+                                        <input type="number" class="form-control passenger-input" id="infants" min="0" value="0">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="addInfant">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label for="babies">Em bé:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button" id="subtractBaby">-</button>
+                                        </div>
+                                        <input type="number" class="form-control passenger-input" id="babies" min="0" value="0">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="addBaby">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div> 
+                            <!-- <button type="submit" class="btn btn-primary" id="submitBtn">Đăng ký</button> --> 
+                        </form>
+                         <!-- Form dki số lượng End -->
+                        <div class="rounded border" id="check5">
+                                <h1>Thông tin hành khách
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                      </svg>
+                                </h1>
+                                <form action="/submit" method="post" onsubmit="return validateForm()">
+                                  <div class="form-group">
+                                      <label for="name">Họ và tên:</label>
+                                      <input type="text" class="form-control" id="name" name="name" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="gender">Giới tính:</label>
+                                      <select class="form-control" id="gender" name="gender">
+                                          <option value="male">Nam</option>
+                                          <option value="female">Nữ</option>
+                                          <option value="other">Khác</option>
+                                      </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="dob">Ngày sinh:</label>
+                                      <input type="date" class="form-control" id="dob" name="dob" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="price">Giá phòng:</label>
+                                      <input type="range" class="form-control-range" id="price" name="price" min="0" max="100000" oninput="updatePrice()">
+                                      <output for="price" id="priceOutput">$50,000.00</output>
+                                  </div>
+                                  <button type="submit" id="timKiem1" class=" my-5 mt-0 py-3 btn btn-primary">Tìm kiếm</button>
+                              </form>
+                                <div class="mr-10" id="check4">             
+                                    <div class="customer-notice-left">. Người lớn sinh trước ngày<b class="mx-1">07/04/2012</b>
+                                        <br>
+                                       - Trẻ nhỏ sinh từ<b class="mx-1">08/04/2019</b> đến<b class="mx-1">07/04/2022</b>
+                                    </div>
+                                    <div class="customer-notice-right">. Trẻ em sinh từ<b class="mx-1">08/04/2012</b>đến<b class="mx-1">07/04/2019</b>
+                                        <br>. Em bé sinh từ<b class="mx-1">08/04/2022</b>đến<b class="mx-1">09/04/2024</b>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Form dki số lượng End -->
+                      
+                    </div>
+                    <!--Hỗ trợ tư vấn Start-->
+                    <!-- <div class="col-md-4">
+                        <div class="rounded border" id="check5">
+                            <h1>Thông tin hành khách
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                  </svg>
+                            </h1>
+                            <form action="/submit" method="post">
+                                <div class="form-group">
+                                    <label for="name">Họ và tên:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Giới tính:</label>
+                                    <select class="form-control" id="gender" name="gender">
+                                        <option value="male">Nam</option>
+                                        <option value="female">Nữ</option>
+                                        <option value="other">Khác</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dob">Ngày sinh:</label>
+                                    <input type="date" class="form-control" id="dob" name="dob" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="price">Giá phòng:</label>
+                                    <input type="range" class="form-control-range" id="price" name="price" min="0" max="100000" oninput="updatePrice()">
+                                    <output for="price" id="priceOutput">0</output>
+                                </div>
+                                <button type="submit" class=" my-5 mt-0 py-3 btn btn-primary">Tìm kiếm</button>
+                                
+                            </form>
+                            <div class="mr-10" id="check4">             
+                                <div class="customer-notice-left">. Người lớn sinh trước ngày<b class="mx-1">07/04/2012</b>
+                                    <br>
+                                   - Trẻ nhỏ sinh từ<b class="mx-1">08/04/2019</b> đến<b class="mx-1">07/04/2022</b>
+                                </div>
+                                <div class="customer-notice-right">. Trẻ em sinh từ<b class="mx-1">08/04/2012</b>đến<b class="mx-1">07/04/2019</b>
+                                    <br>. Em bé sinh từ<b class="mx-1">08/04/2022</b>đến<b class="mx-1">09/04/2024</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="col-md-6">
+                        <div class="container mt-4">
+                            <div class="rounded p-3 border border-primary">
+                                <p class="h5">Quý khách cần hỗ trợ?</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary">
+                                        <a href="https://www.facebook.com/TuanAnh.0627" target="_blank">
+                                            <i class="bi bi-telephone"></i> Gọi miễn phí qua internet
+                                        </a>
+                                    </button>
+                                    <button class="btn btn-outline-primary">
+                                        <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=CllgCJfmrfVlwwxKZKqzmCnFHStLJzBBjbWJVtMRrNNvqTpLbJxzbtczPFSjNLhQkpLMkpddsVB"  target="_blank">
+                                            <i class="bi bi-envelope"></i> Gửi yêu cầu hỗ trợ ngay
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="highlight-wrapper">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Travel Package Summary</h5>
+                                        <p class="card-text">Itinerary: Explore the beautiful landscapes of Russia</p>
+                                        <p class="card-text">Start Date: 19/05/2024</p>
+                                        
+                                        <p class="card-text">End Date: 27/05/2024</p>
+                                        
+                                        
+                                        <p class="card-text">Passengers: 9 adults, 10 child</p>
+                                        
+                                        <p class="card-text">Room Booking Price:$6.300</p>
+                                       
+                                        <hr>
+                                        <img src="../gif/h2.gif" alt="">
+                                        <p class="card-text">Discount Code:</p>
+                                        <input type="text" class="form-control mb-3 input-effect" placeholder="Enter discount code">
+                                        <p class="card-text">Total Cost: $6.300</p>
+                                        <!-- Loại bỏ nút Đăng ký -->
+                                        <button type="button" class="btn btn-primary" id="bookTourBtn">Book Tour</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                     <!--Hỗ trợ tư vấn End-->
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="slider1">
+                            <h1>Các hình ảnh liên quan đến Tour</h1>
+                            <div class="slides1">
+                                <div class="slide1"><img src="../IMG/n1.jpg" alt=""></div>
+                                <div class="slide1"><img src="../IMG/n2.jpg" alt=""></div>
+                                <div class="slide1"><img src="../IMG/n3.jpg" alt=""></div>
+                                <div class="slide1"><img src="../IMG/n5.jpg" alt=""></div>
+                            </div>
+                        </div>
+                   </div>  
+                </div>
+
+                <!-- <div class="row">
+                    <div class="col-md-12">
+                        <div class="img-fluid">
+                            <img src="../gif/52ae1772ff0a309fd09f735c5c109bf9.gif" height="100%" id="goku" alt="">
+                        </div>
+                    </div>   
+                </div>  -->
+           
+                <div class="row">
+                    
+                    <div class="col-md-2" id="gohan">
+                        <h2 class="mxh p-3">Mạng xã hội</h2>
+                        <ul class="id1">
+                            <li class="tiktok" id="k1"> 
+                                <a href="#" id="id2" class="logo-container" >
+                                    <i class="fab fa-tiktok" id="id3"></i>
+                                    <div id="fireworks"></div>
+                                </a>
+                            </li>
+                            <li class="twitter" id="k1"> 
+                                <a href="#" id="id2" class="logo-container" >
+                                    <i class="fab fa-twitter" id="id3"></i>
+                                    <div id="fireworks"></div>
+                                </a>
+                            </li>
+                            <li class="facebook" id="k1">
+                                <a href="https://www.facebook.com/thecuong.bui.710" class="logo-container" id="id2"  target="_blank">
+                                    <i class="fab fa-facebook" id="id3"></i>
+                                    <div id="fireworks"></div>
+                                </a>
+                            </li>
+                            <li class="instagram" id="k1"> 
+                                <a href="#" id="id2" class="logo-container" >
+                                    <i class="fab fa-instagram" id="id3"></i>
+                                    <div id="fireworks"></div>
+                                </a>
+                            </li>
+                            <li class="youtube" id="k1"> 
+                                <a href="#" id="id2" class="logo-container" >
+                                    <i class="fab fa-youtube" id="id3"></i>
+                                    <div id="fireworks"></div>
+                                </a>
+                            </li>
+                            <li class="github" id="k1"> 
+                                <a href="#" id="id2" class="logo-container" >
+                                    <i class="fab fa-github" id="id3"></i>
+                                    <div id="fireworks"></div>
+                                </a>
+                            </li>
+                            <li class="whatsapp" id="k1"> 
+                                <a href="#" id="id2" class="logo-container" >
+                                    <i class="fab fa-whatsapp" id="id3"></i>
+                                    <div id="fireworks"></div>
+                                </a>
+                            </li>
+                        </ul>
+                        <br> 
+                    </div> 
+                    <!--Footer Start-->
+                    <div class="row" id="mcd">
+                        <div class="col-md-3">
+                            <b><h4 class="travel">Du lịch trong nước</h4></b>
+                            <div class="row">
+                                <div class="col-md-4 mx-2 "><span class="text1">Hà Nội <br>Hạ Long <br>Huế <br>Quảng Bình <br>Đà Nẵng <br>Quảng Nam <br>Nha Trang <br>Đà Lạt</span></div>
+                                <div class="col-md-4 mx-2"> <span class="text1">Phan Thiết <br>Phú Quốc <br>Cần Thơ <br>Hà Tiên <br>Bắc cạn <br>Hà Giang<br>Côn Đảo<br>Bến Tre</span></div>  
+                            </div>
+                            <br>
+                            <br>
+                            <h4 class="travel">Liên hệ</h4>
+                                <div class="col-md-12 mx-2 "><span class="text1">Hotline: 1900 1800 <br>Điện thoại: 024 7307 7979 <br>Địa chỉ: 80 Trần Hưng Đạo, Hoàn Kiếm, Hà Nội <br>Email : infor@tour.com</span></div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <h4 class="travel">Du lịch ngoài nước</h4>
+                                <div class="col-md-4 mx-2 "><span class="text1">Hàn Quốc <br>Nhật Bản <br>Thái Lan <br>Mỹ <br>Úc <br>Na Uy <br>Thụy Sỹ<br>Đan Mạch</span></div>
+                                <div class="col-md-4 mx-2"><span class="text1">Brazil <br>Tây Ban Nha <br>Hà lan <br>Đức <br>Bồ Đồ Nha <br>Nga<br>Pháp<br>Maldives</span></div>   
+                                <br>                  
+                            </div>
+                            <br>
+                            <br>
+                            <h4 class="travel">Thông tin</h4>
+                                <div class="col-md-12 mx-2 "><span class="text1">Tạp chí du lịch <br>Cẩm nang du lịch <br>Tin tức <br>FAQs <br>Chính sách riêng tư <br>Thỏa thuân sử dụng</span></div> 
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <h4 class="travel">Dòng Tour</h4>
+                                <div class="col-md-4 mx-2 "><span class="text1">Cao Cấp <br>Tiêu chuẩn <br>Tiết kiệm <br>Giá tốt</span></div>
+                                <h4 class="travel">Dịch vụ lẻ</h4>
+                                <div class="col-md-4 mx-2 "><span class="text1">Vé máy bay <br>Khách sạn <br>Combo du lịch</span></div>
+                             </div>
+                             <br>
+                             <br>
+                             <img src="../IMG/travel.jpg" class="img-fluid rounded-circle" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <h4 class="travel">Ứng dụng di động</h4>
+                                <div class="col-md-4 py-1 mx-y "><img src="../IMG/gg.png" class="img-fluid" alt=""><br><span text1>Android <img src="../IMG/qr.png" class="img-fluid" alt=""></span></div>
+                                <div class="col-md-4 py-1 mx-y"> <img src="../IMG/app.jpg"  alt="" class="img-fluid"><br><span class="px-2">IOS <img src="../IMG/qr.png" class="img-fluid" alt=""></span></div>
+                             </div>
+                             <br>
+                             <div>
+                                <form action="#" method="post">
+                                    <input name="__RequestVerificationToken" type="hidden">
+                                    <input type="text" name="EmailRegister" placeholder="Email của Quý khách" id="EmailRegisterFooter" required="" value="">
+                                    <input type="submit" name="submit" class="sm" value="Gửi">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </form>
+                               
+                             </div>
+                             <br>
+                             <h4 class="travel">Tìm kiếm thông tin</h4>
+                             <form action="">
+                                <input type="text" placeholder="Tour du lịch, điểm đến..." name="search">
+                                <button type="submit"><i class="fa fa-search my-1 rounded border"></i></button>
+                              </form>
+                              <img src="../IMG/all.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                   </div>  
+                   <!--Footer END-->
+                </div>
+
+         </div>
+             <!-- #Chuyển động ảnh Start -->
+
+             <div id="app">
+                <div id="hero">
+                    
+                </div>
+            </div>
+            <!-- modal -->
+    <div class="modal" id="userForm">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <ul class="nav fs-3">
+                <li class="nav-item">
+                  <button
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#loginForm"
+                  >
+                    Login
+                  </button>
+                </li>
+                <li
+                  class="nav-item d-flex align-items-center"
+                  style="color: gray; margin-right: 1rem"
+                >
+                  /
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#registerForm"
+                  >
+                    Register
+                  </button>
+                </li>
+              </ul>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="tab-content" id="tabConent">
+                <div class="tab-pane show active" id="loginForm">
+                  <p class="text-muted">
+                    Vui lòng đăng nhập trước khi đặt tour để tích lũy điểm, cơ hội
+                    nhận thêm nhiều ưu đãi từ Website
+                  </p>
+                  <form class="needs-validation" novalidate>
+                    <div class="row g-2">
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailInput"
+                            placeholder="Email"
+                            required
+                          />
+                          <label for="emailInput">Email</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="passwordInput"
+                            placeholder="Password"
+                            required
+                          />
+                          <label for="passwordInput">Password</label>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text-muted mt-2 fs-6">Quên mật khẩu?</p>
+                    <div class="d-grid">
+                      <button
+                        style="
+                          background-color: rgb(232, 127, 90);
+                          border: 1px solid rgb(232, 127, 90);
+        
+                        "
+                        type="submit"
+                        class="btn text-white"
+                      >
+                        ĐĂNG NHẬP
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane" id="registerForm">
+                  <form class="needs-validation" novalidate>
+                    <div class="row gx-1 gy-2">
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nameInput"
+                            placeholder="Fullname"
+                            required
+                          />
+                          <label for="nameInput">Fullname</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="phoneInput"
+                            placeholder="Phonenumber"
+                            required
+                          />
+                          <label for="phoneInput">Phonenumber</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <select id="genderSelector" class="form-select" placeholder="Choose your gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                          <label for="genderSelector">Choose your gender</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="emailInput2"
+                            placeholder="Email"
+                            required
+                          />
+                          <label for="emailInput2">Email</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="phoneInput"
+                            placeholder="passwordInput2"
+                            required
+                          />
+                          <label for="passwordInput2">Password</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="phoneInput"
+                            placeholder="passwordVerifyInput"
+                            required
+                          />
+                          <label for="passwordVerifyInput">Verify password</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <select id="citySelector" class="form-select" required>
+                            <option value="Ho Chi Minh">Hồ Chí Minh</option>
+                            <option value="Ha Noi">Ha Noi</option>
+                          </select>
+                          <label for="citySelector">Choose your city</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <select id="districtSelector" class="form-select" required>
+                            <option value="1">1</option>
+                            <option value="4">4</option>
+                            <option value="Gò Vấp">Gò Vấp</option>
+                          </select>
+                          <label for="districtSelector">Choose your district</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="text" id="addressInput" class="form-control" placeholder="Address" required>
+                          <label for="addressInput">Address</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="date" id="dobInput" class="form-control" required>
+                          <label for="dobInput">Date of birth</label>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-2 text-muted">Tôi đã đọc và đồng ý với <span style="color: rgb(232, 127, 90);">CHÍNH SÁCH</span> của chương trình</p>
+                    <div class="d-grid">
+                      <button type="submit" class="btn text-white" style="background-color: rgb(232, 127, 90);">ĐĂNG KÝ</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+        
+    </div>
+    <!-- hết modal -->
+            
+
+      <!-- #Chuyển động ảnh END -->
+               
+        </div>
+        <!-- Form dki tour END -->
+        <!-- Modal -->
+            <div id="errorModal" class="modal">
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="errorMessage"></p>
+                <button id="closeModalBtn">OK</button>
+                </div>
+            </div>
+
+            
+  
+        
+
+    </div>  
+
+    
+     <!-- Rang buộc tour Start -->
+    <script>
+       $(document).ready(function(){
+    $("#check5").submit(function(event){
+        // Ngăn chặn sự kiện mặc định của form (tức là việc gửi form đi)
+        event.preventDefault();
+
+        // Kiểm tra các trường dữ liệu
+        var name = $("#name").val();
+        var dob = $("#dob").val();
+
+        // Nếu một trong các trường bị trống
+        if (name.trim() === "" || dob.trim() === "") {
+            alert("Vui lòng điền đầy đủ thông tin hành khách!");
+            return;
+        }
+
+        // Nếu dữ liệu hợp lệ, tiến hành gửi form
+        // Chú ý: Nếu bạn muốn gửi form, bạn có thể thêm dòng này vào sau khi kiểm tra
+        // $(this).unbind('submit').submit(); 
+        // Hoặc có thể thay đổi trạng thái của form (ví dụ: enable/disable nút submit)
+    });
+});
+
+
+            $(document).ready(function(){
+        $("#tourRegistrationForm").submit(function(event){
+            event.preventDefault(); // Ngăn chặn việc gửi form mặc định
+            
+            var totalPassengers = 0;
+            $(".passenger-input").each(function(){
+                totalPassengers += parseInt($(this).val()) || 0;
+            });
+            if(totalPassengers === 0){
+                alert("Bạn phải nhập ít nhất một hành khách.");
+            } else {
+                alert("Đăng ký thành công!");
+                $("#tourRegistrationForm")[0].reset();
+            }
+        });
+       });
+
+            // Hàm cập nhật giá phòng
+            function updatePrice() {
+                // Lấy giá trị từ thanh trượt
+                var priceValue = document.getElementById("price").value;
+                // Chuyển đổi giá trị sang định dạng tiền tệ
+                var formattedPrice = formatCurrency(priceValue);
+                // Hiển thị giá phòng
+                document.getElementById("priceOutput").innerText = formattedPrice;
+            }
+
+            
+
+           
+        // Làm sạch tất cả các thông báo lỗi trước khi kiểm tra lại
+        var errorElements = document.querySelectorAll('.error-message');
+        errorElements.forEach(function(element) {
+            element.textContent = ''; 
+        });
+
+            // Hàm chuyển đổi giá trị sang định dạng tiền tệ
+            function formatCurrency(amount) {
+                var formatter = new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: 'USD'
+                });
+                return formatter.format(amount);
+            }
+
+
+
+        $(document).ready(function(){
+            // Xử lý khi nút giảm số lượng hành khách được nhấn
+            $("#subtractAdult").click(function(){
+                var currentCount = parseInt($("#adults").val());
+                if(currentCount > 0){
+                    $("#adults").val(currentCount - 1);
+                }
+            });
+
+            // Xử lý khi nút tăng số lượng hành khách được nhấn
+            $("#addAdult").click(function(){
+                var currentCount = parseInt($("#adults").val());
+                $("#adults").val(currentCount + 1);
+            });
+
+            $("#subtractChild").click(function(){
+                var currentCount = parseInt($("#children").val());
+                if(currentCount > 0){
+                    $("#children").val(currentCount - 1);
+                }
+            });
+
+            $("#addChild").click(function(){
+                var currentCount = parseInt($("#children").val());
+                $("#children").val(currentCount + 1);
+            });
+
+            $("#subtractInfant").click(function(){
+                var currentCount = parseInt($("#infants").val());
+                if(currentCount > 0){
+                    $("#infants").val(currentCount - 1);
+                }
+            });
+
+            $("#addInfant").click(function(){
+                var currentCount = parseInt($("#infants").val());
+                $("#infants").val(currentCount + 1);
+            });
+
+            $("#subtractBaby").click(function(){
+                var currentCount = parseInt($("#babies").val());
+                if(currentCount > 0){
+                    $("#babies").val(currentCount - 1);
+                }
+            });
+
+            $("#addBaby").click(function(){
+                var currentCount = parseInt($("#babies").val());
+                $("#babies").val(currentCount + 1);
+            });
+
+            // Xử lý khi form đăng ký tour được gửi
+            $("#tourRegistrationForm").submit(function(event){
+                event.preventDefault(); // Ngăn chặn việc gửi form mặc định
+                
+                // Lấy số lượng hành khách từ trường input
+                var totalPassengers = parseInt($("#passengers").val());
+
+                if(totalPassengers === 0){
+                    alert("Bạn phải nhập ít nhất một hành khách.");
+                } else {
+                    // Thực hiện xử lý khi form hợp lệ, ví dụ: gửi dữ liệu đăng ký lên máy chủ
+                    alert("Đăng ký thành công!");
+                    // Reset form sau khi gửi thành công
+                    $("#tourRegistrationForm")[0].reset();
+                }
+            });
+        });
+
+        // Thêm hoặc xóa lớp 'focus' cho form-control khi focus vào hoặc blur ra
+        $('.form-control').focus(function() {
+            $(this).addClass('focus');
+        }).blur(function() {
+            $(this).removeClass('focus');
+        });
+
+        // Thêm hoặc xóa lớp 'active' cho các nút khi nhấn vào
+        $('.input-group-prepend button, .input-group-append button').mousedown(function() {
+            $(this).addClass('active');
+        }).mouseup(function() {
+            $(this).removeClass('active');
+        });
+           // Hàm hiển thị thông báo lỗi dưới trường thông tin
+function showError(fieldId, errorMessage) {
+    var errorElement = document.getElementById(fieldId + '-error');
+    errorElement.textContent = errorMessage;
+}
+$(document).ready(function() {
+  $("#bookTourBtn").click(function() {
+    var fullName = $("#fullName").val();
+    var email = $("#email").val();
+    var phone = $("#phone").val();
+    var address = $("#address").val();
+    var nationality = $("#nationality").val();
+    var gender = $("#gender").val();
+
+    // Khởi tạo biến lưu trữ thông báo lỗi
+    var errorMessage = '';
+
+    // Kiểm tra từng trường và cập nhật thông báo lỗi
+    if (fullName === '') {
+      errorMessage += 'Vui lòng nhập họ và tên.\n';
+      $("#fullName").focus().attr("placeholder", "Vui lòng nhập họ và tên").addClass("error-field");
+    } else {
+      $("#fullName").removeAttr("placeholder").removeClass("error-field");
+    }
+    if (email === '') {
+      errorMessage += 'Vui lòng nhập địa chỉ email.\n';
+      $("#email").focus().attr("placeholder", "Vui lòng nhập địa chỉ email").addClass("error-field");
+    } else {
+      $("#email").removeAttr("placeholder").removeClass("error-field");
+    }
+    if (phone === '') {
+      errorMessage += 'Vui lòng nhập số điện thoại.\n';
+      $("#phone").focus().attr("placeholder", "Vui lòng nhập số điện thoại").addClass("error-field");
+    } else {
+      $("#phone").removeAttr("placeholder").removeClass("error-field");
+    }
+    if (address === '') {
+      errorMessage += 'Vui lòng nhập địa chỉ.\n';
+      $("#address").focus().attr("placeholder", "Vui lòng nhập địa chỉ").addClass("error-field");
+    } else {
+      $("#address").removeAttr("placeholder").removeClass("error-field");
+    }
+    if (nationality === '') {
+      errorMessage += 'Vui lòng chọn quốc tịch.\n';
+      $("#nationality").focus().addClass("error-field");
+    } else {
+      $("#nationality").removeClass("error-field");
+    }
+    if (gender === '') {
+      errorMessage += 'Vui lòng chọn giới tính.\n';
+      $("#gender").focus().addClass("error-field");
+    } else {
+      $("#gender").removeClass("error-field");
+    }
+
+    // Kiểm tra nếu có thông báo lỗi, hiển thị nó
+    if (errorMessage !== '') {
+      $("#errorMessage").text(errorMessage);
+      $("#errorModal").css("display", "block");
+      return; 
+    }
+
+    // Nếu không có lỗi, hiển thị thông báo "Đăng ký tour thành công"
+    alert('Đăng ký tour thành công!');
+    $("#tourRegistrationForm")[0].reset();
+  });
+
+  // Đóng modal khi nhấn vào nút đóng hoặc nút "x"
+  $(".close").click(function() {
+    $("#errorModal").css("display", "none");
+  });
+
+  // Đóng modal khi nhấn nút "OK"
+  $("#closeModalBtn").click(function() {
+    $("#errorModal").css("display", "none");
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.querySelector('.slider1');
+    const slides = document.querySelector('.slides1');
+    const slide = document.querySelectorAll('.slide1');
+
+    let counter = 0;
+    const slideWidth = slide[0].clientWidth;
+
+    setInterval(function() {
+        slides.style.transition = "none";
+        // Di chuyển slide tiếp theo về phía trái
+        slides.style.transform = `translateX(${-slideWidth}px)`;
+        setTimeout(function() {
+            slides.style.transition = "transform 0.5s ease-in-out";
+            // Di chuyển slide đầu tiên xuống cuối danh sách
+            slides.appendChild(slides.firstElementChild);
+            // Khôi phục vị trí của slide về trái (0px)
+            // slides.style.transform = `translateX(0)`;
+        }, 100); 
+    }, 3000); // điều chỉnh thời gian chuyển đổi giữa các ảnh
+});
+
+    document.getElementById('emailIcon').addEventListener('click', function() {
+     document.getElementById('emailForm').submit();
+         });
+         function validateForm() {
+        var name = document.getElementById("name").value;
+        var dob = document.getElementById("dob").value;
+
+        if (name == "" || dob == "") {
+            alert("Vui lòng điền đầy đủ thông tin hành khách!");
+            return false;
+        }
+        return true;
+    }
+
+
+    </script>
+   
+     
+</body>
+
+</html>

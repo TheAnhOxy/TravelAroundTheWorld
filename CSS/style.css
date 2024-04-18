@@ -1,0 +1,729 @@
+
+*{
+    padding: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.container-fluid{
+    /* width:1000px; */
+    /*height: 12000px;
+    /* overflow : hidden la bao gom cac con*/
+    overflow: hidden;
+}
+
+.nav .navbar {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+
+}
+.navbar img{
+    width: 10%;
+    height: 70px;
+}
+#in1{
+    border: 1px orange solid;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: 350px;
+} 
+#bt1{
+    border:1px;
+    border-radius: 8px; 
+    color: black;
+    background-color: orange;
+    margin: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+#dangnhap{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 13px;
+    opacity: 0.5;
+}
+#dangnhap:hover{
+    color: orange;
+}
+.nav-item {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nav-item:hover a {
+   color: orange;
+}
+li a .dropdown-item:hover a
+{
+    color: blue;
+}
+/* .header{
+    width: 100%;
+    height: 500px;
+}
+.header img{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+} */
+
+/* .header img{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+} */
+
+ .header{
+    width: 200%;
+    height: 500px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+} 
+
+.slides{
+    width : 100%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width : 70%;
+    transition: 3s;
+}
+
+.slide img{
+    width: 3000px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 450px;
+}
+
+.manual-btn{
+    border: 2px solid orange;
+    padding: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 3s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: orange;
+    color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: -2%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -85%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -150%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 450px;
+}
+
+.navigation-auto div{
+    border : 2px solid orange;
+    padding : 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 45px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: orange;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: orange;
+}
+
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: orange;
+}
+
+
+
+.collapse{
+    background-color: white;
+    text-align: left;
+    width: 40%;
+}
+
+#a2{
+    height: 10px;
+}
+#img1{
+    width: 100px;
+    padding: 4px;
+}
+
+#line{
+    color: orange;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.chayline{
+    width: 30%;
+    height: 30px;
+    margin-left: 150px;
+}
+
+.fa-solid{
+    color: black;
+}
+.fa-solid:hover{
+    color: orange;
+    transform-style: flat;
+}
+
+.nav {
+    z-index: 1000; /* Đặt z-index cao hơn để menu hiển thị trên ảnh */
+}
+
+
+
+<!-- /* Move left Start */
+.slider1 {
+    position: absolute;
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+.slides1 {
+    display: flex;
+}
+
+.slide1 {
+    flex: 0 0 33.33%; /* Chia không gian mỗi slide thành 1/3 chiều rộng của container */
+    transition: transform 0.5s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    /* margin-top: 300px; */
+    padding: 7px;
+}
+
+
+
+<!-- /* Move left End */
+
+
+<!-- /* Bổ sung Trang chủ start */
+
+
+
+
+
+<!-- /* Bổ sung Trang chủ start END */
+
+
+<!-- /* footer Trang chủ start */
+
+<!-- /*logo start*/
+.id1{
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    gap: 24px;
+}
+#k1 {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+    background: #474644;
+    border-radius: 15px;
+    border-bottom: 5px solid #33322f;
+    border-left: 3px solid #000000;
+    box-shadow: -3px 5px 10px 3px #33322f80, 5px -5px 20px 10px #33322f80, 0px 2px 1px #000000b3;
+    transition: transform 0.15s ease-in-out;
+}
+
+#id2{
+    width: 100%;
+    height: 100%;
+    
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#id3{
+    font-size: 3rem;
+    color: #858482;
+    text-shadow: 0px 0px #504F4E, 0px 1px #424241, -1px 1px #353534, -2px 3px #282827, 0px 6px 5px #33322fcc;
+}
+
+.tiktok:hover #id3{
+    text-shadow: 0px 0px #C42829, 0px 1px #AE2425, -1px 2px #991F20, -2px 3px #831B1C, 0px 6px 5px #33322fcc, 0 0 1em #ff0050;
+    color: #ff0050;
+}
+
+.twitter:hover #id3{
+    text-shadow: 0px 0px #34AEDF, 0px 1px #2E9AC6, -1px 2px #2987AE, -2px 3px #237495, 0px 6px 5px #33322fcc, 0 0 1em #3ac1f8;
+    color: #3ac1f8;
+}
+
+.facebook:hover #id3{
+    text-shadow: 0px 0px #394C89, 0px 1px #32447A, -1px 2px #2C3B6A, -2px 3px #26335B, 0px 6px 5px #33322fcc, 0 0 1em #4267B2;
+    color: #4267B2;
+}
+.instagram:hover #id3 {
+    text-shadow: 0px 0px #833AB4, 0px 1px #833AB4, -1px 2px #C13584, -2px 3px #FD1D1D, -3px 4px #F56040, 0px 6px 5px #FCAF45, 0 0 1em #FCAF45;
+    color: #FCAF45;
+}
+.youtube:hover #id3 {
+    text-shadow: 0px 0px #C42829, 0px 1px #AE2425, -1px 2px #991F20, -2px 3px #831B1C, 0px 6px 5px #33322fcc, 0 0 1em #ff0050;
+    color: #ff0000;
+}
+
+.github:hover #id3 {
+    text-shadow: 0px 0px #C42829, 0px 1px #AE2425, -1px 2px #991F20, -2px 3px #831B1C, 0px 6px 5px #33322fcc, 0 0 1em #ff0050;
+    color:  #ffffff;
+}
+
+
+.whatsapp:hover #id3 {  
+    text-shadow: 0px 0px #25D366, 0px 1px #25D366, -1px 2px #25D366, -2px 3px #25D366, 0px 6px 5px #25D366, 0 0 1em #25D366;
+    color: #25D366;
+
+}
+<!-- /*logo end*/
+
+
+
+
+
+
+
+#gohan {
+    /* border: 1px solid black; */
+    /* position: relative; */
+    /* top: 300%; */
+    /* height: 100%; */
+    /* display: flex; */
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4); */
+    color : #999;
+    /* left: 200px; */
+    /* margin-left: 110px; */
+    margin-right: 110px;
+    text-decoration: none;
+    /* letter-spacing: 4px; */
+   
+}
+
+
+#fireworks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#fireworks:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    animation: fireworks 1s infinite;
+}
+
+@keyframes fireworks {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-100px, -200px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+#gohan:hover #fireworks:before {
+    animation: fireworks 1s infinite;
+}
+
+
+/* #gohan:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #daf1b2, #90e9eb);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); 
+} */
+
+
+
+/* #gohan:hover {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); /* Hiệu ứng di chuyển xung quanh viền */
+
+.travel{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.text1{
+
+    margin-top: 100px;
+}
+#mcd{
+    position: relative;
+    text-justify: center;
+    top: -140px;
+}
+
+#see{
+    position: relative;
+    height: 300px;
+}
+.mxh {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #ff6a00;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    overflow: hidden;
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #8db6da, #fcdd8a);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); 
+}
+
+.mxh:before,
+.mxh:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid transparent; /* Đường border mặc định */
+    transition: border-color 0.3s ease; /* Hiệu ứng màu cho border */
+    z-index: 1;
+}
+
+.mxh:before {
+    top: 0;
+    bottom: auto;
+    border-top: 3px solid transparent; /* Đường border mặc định */
+    transition: border-color 0.3s ease; /* Hiệu ứng màu cho border */
+}
+
+.mxh:hover:before,
+.mxh:hover:after {
+    border-color: #ff00ff; /* Màu của border khi hover */
+}
+
+.mxh:hover:before {
+    border-color: #ff00ff; /* Màu của border khi hover */
+}
+
+
+.kl {
+    font-weight: 500; /* Giá trị font-weight lớn hơn để làm cho chữ đậm hơn */
+    color: #0051ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#qt{
+    color: #a11a1a;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Canh giữa các logo */
+    align-items: center; /* Canh giữa theo chiều dọc */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Khoảng cách giữa các logo */
+}
+
+.social-icons a i {
+    font-size: 24px; /* Kích thước của logo */
+    color: #333; /* Màu của logo */
+}
+
+/* Tùy chỉnh màu của từng logo */
+.social-icons .tiktok i {
+    color: #69c9d0; 
+}
+
+.social-icons .twitter i {
+    color: #1da1f2; 
+}
+
+.social-icons .facebook i {
+    color: #3b5998; 
+}
+
+#app{
+    overflow: hidden;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 00 30px #000;
+}
+
+#app a{
+    margin-top: 10px;
+    font-display: inline-block;
+    text-decoration: none;
+    color : #fff;
+}
+
+#app canvas{
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    
+}
+
+#gohan{
+    position: relative;
+    top: 200px;
+    width: 100%;
+    height: 600px;
+    /* border-radius: 10%;  */
+
+}
+
+<!-- /* footer Trang chủ end */
+/* phan body
+/* Tai sao lai chon Gotour*/
+.grid {
+    padding: 20px;
+  }
+  
+  .why_title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-style: oblique;
+  }
+  
+  .why {
+    border: 1px solid #ddd;
+    padding: 10px; 
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px; 
+  }
+  
+  .item {
+    text-align: center;
+  }
+  
+  .item h2 {
+    color: #333;
+    font-size: 2.5em; 
+  }
+  
+  .item p {
+    color: #666;
+    font-size: 1.5em; 
+  }
+  .why .item i {
+    font-size: 5em; 
+  }
+  /* Het phan vi sao*/
+
+/* Mục địa điểm yêu thích */
+
+.favorite-title {
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin-bottom: 20px;
+  }
+  .card-body a{
+    text-decoration: none;
+  color: inherit;
+  }
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-img {
+    height: 200px; /* Set fixed height for images */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    border-top-left-radius: 10px; /* Adjust border radius to match card */
+    border-top-right-radius: 10px; /* Adjust border radius to match card */
+  }
+  
+/* End Mục địa điểm yêu thích */
+  
+/* mục offers */
+.special-offers {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .offer-title h2 {
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+  
+  .offer {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  
+  .offer h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: ivory; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+    border-radius: 3px; 
+  }
+  
+  .offer p {
+    margin-bottom: 5px;
+    font-weight: bold; 
+    color: yellow;
+  }
+  
+  .address {
+    font-style: italic;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .date {
+    font-style: italic;
+  }
+  
+  .included {
+    font-weight: bold;
+    color: yellow;
+  }
+  
+  .book-now-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .book-now-btn:hover {
+    background-color: darkred;
+  }
+  
+  
+  /* end mục offers */
+   
+  /* CSS cho form */
+form {
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  padding: 20px; 
+  background-color: #f9f9f9; 
+}
+
+
+.form-control {
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 10px; 
+  margin-bottom: 15px; 
+  width: 100%; 
+}
+
+/* CSS cho nút Gửi */
+.btn-primary {
+  background-color: orange; 
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  cursor: pointer; 
+}
+
+.btn-primary:hover {
+  background-color: darkorange; 
+}
+
+/* CSS cho tiêu đề Liên Hệ */
+h2 {
+  color: #333; 
+  margin-bottom: 20px;
+}
+.branch-info{
+  margin-top: 50px;
+}
+
+  
+

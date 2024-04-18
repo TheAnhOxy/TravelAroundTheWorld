@@ -1,0 +1,23 @@
+*{
+    padding: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.container{
+    width: 60%;
+    height: 900px;
+    background-color: green;
+    margin-left: 20%;
+    
+}
+#logo{
+    width: 60%;
+    height: 400px;
+}
+
+/* #modal{
+   
+    margin-right: 100px;
+} */
+

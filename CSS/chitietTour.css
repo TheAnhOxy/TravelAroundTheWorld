@@ -1,0 +1,111 @@
+
+.container{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+#img1{
+    width: 100px;
+    padding: 4px;
+}
+
+h1{
+    font-weight: bold;
+    color: rgb(13, 33, 146);
+}
+
+.thich{
+    padding: 5px;
+    font-size: 30px;
+    width: 20%;
+}
+
+#price{
+    font-size: 20px;
+}
+
+.img1{
+    height: 400px;
+    border-radius: 10px;
+}
+
+.img2{
+    height: 140px;
+    border-radius: 10px;
+}
+.img3{
+    height: 240px;
+    border-radius: 10px;
+}
+
+.card1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+b{
+    color:rgb(13, 33, 146);
+}
+
+.card{
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.card :hover {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+ 
+}
+
+.card img{
+    border-radius: 15px 15px 0 0;
+    height: 250px;
+}
+
+.content {
+    border-radius: 0 0 15px 15px;
+}
+
+.content a{
+    color: white;
+}
+
+.favourite{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    padding: 5px;
+}
+
+.ChiTietTour{
+    position: absolute;
+    border-radius: 15px;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width: 500px;
+    height: 300px; 
+    margin: 0 5px;
+    border-radius: 10px;
+  }

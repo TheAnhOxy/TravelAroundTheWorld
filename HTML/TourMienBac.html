@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/Dulich.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="icon" href="../IMG/viet2.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <title>Tour Miền Bắc</title>
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="nav">
+            <nav class="navbar navbar-expand-md ">
+                <a href="../HTML/index.html"><img id="img1" src="../IMG/2.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Du Lịch</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="DulichTrongNuoc.html" class="dropdown-item">Du Lịch Trong Nước</a></li>
+                            <li><a href="DulichNgoaiNuoc.html" class="dropdown-item">Du Lịch Ngoài Nước</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Vận chuyển</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../HTML/VanChuyen.html" class="dropdown-item">Thuê Máy Bay</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item" sp><a href="Tintuc.html" class="nav-link">Tin Tức</a></li>
+                    <li class="nav-item" sp><a href="KhuyenMai.html" class="nav-link">Khuyến Mãi</a></li>
+                    <li class="nav-item" sp><a href="lienHe.html" class="nav-link">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <hr>
+        <!-- Cho biet vi tri hien tại của trang web -->
+        <div class="location">
+            <a href="index.html">Trang chủ</a> > 
+            <a href="DulichTrongNuoc.html">Du lịch trong nước</a> >
+            <a href="TourMienBac.html">Tour Miền Bắc</a>
+        </div>
+        
+        <hr>
+
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="form border">
+                    <form action="">
+                        <div style="background-color: #7367f0; color: white; padding: 10px;">
+                            <strong>Bộ lọc tìm kiếm</strong>
+                        </div>
+                        <br>
+                    
+                        <!-- <label for="region">Miền Bắc</label> -->
+
+                        <input type="text" id="region" name="region" class="text-center" disabled value="Miền Bắc"><br><br>
+                    
+                        <label for="tourType">LOẠI HÌNH TOUR</label>
+                        <br>
+                        <select class="form-control dropdown Filter" name="TourKindId">
+                            <option value="-1" selected="">--- Tất cả ---</option>
+                            <option value="0">Tour trọn gói</option>
+                            <option value="1">Tour gia đình</option></select>
+                    
+                            <br>
+                        <label class="mx-10" for="departure">ĐIỂM ĐI</label>
+                        <label class="mx-10" for="departure">ĐIỂM ĐI</label>
+                        <select class="form-control dropdown Filter" id="departure" name="departure" onchange="showCoordinates(this)">
+                            <option value="" selected>-- Tất cả --</option>
+                            <option value="21.0285,105.8542">Hà Nội</option>
+                            <option value="10.8231,106.6297">Hồ Chí Minh</option>
+                            <option value="16.0544,108.2022">Đà Nẵng</option>
+                            <option value="20.8624,106.6830">Hải Phòng</option>
+                            <option value="10.0451,105.7469">Cần Thơ</option>
+                            <option value="16.4637,107.5909">Huế</option>
+                            <option value="12.2388,109.1966">Nha Trang</option>
+                            <option value="10.3460,107.0848">Vũng Tàu</option>
+                            <option value="20.9517,107.0533">Hạ Long</option>
+                            <option value="10.2270,103.9637">Phú Quốc</option>
+                            <!-- Các điểm đi khác -->
+                            <option value="22.8251,104.9830">Hà Giang</option>
+                            <option value="22.8860,104.3270">Lào Cai</option>
+                            <option value="22.3361,103.8448">Sapa (Lào Cai)</option>
+                            <option value="17.5369,106.4973">Quảng Bình</option>
+                            <option value="13.7800,109.2196">Quy Nhơn (Bình Định)</option>
+                            <option value="16.4637,107.5909">Huế</option>
+                            <option value="10.3460,107.0848">Vũng Tàu</option>
+                            <option value="10.0451,105.7469">Cần Thơ</option>
+                            <option value="9.1769,105.1496">Cà Mau</option>
+                            <!-- Các điểm đi khác -->
+                            <option value="22.8251,104.9830">Hà Giang</option>
+                            <option value="22.8860,104.3270">Lào Cai</option>
+                            <option value="22.3361,103.8448">Sapa (Lào Cai)</option>
+                            <option value="17.5369,106.4973">Quảng Bình</option>
+                            <option value="13.7800,109.2196">Quy Nhơn (Bình Định)</option>
+                            <option value="16.4637,107.5909">Huế</option>
+                            <option value="10.3460,107.0848">Vũng Tàu</option>
+                            <option value="10.0451,105.7469">Cần Thơ</option>
+                            <option value="9.1769,105.1496">Cà Mau</option>
+                        </select>
+                        <br>
+                        <div id="coordinates"></div>
+
+                    
+                        <label  for="destination">ĐIỂM ĐẾN</label>
+                        <select  class="form-control dropdown Filter" id="destination" name="destination">
+                            <option value="" selected>--Chọn điểm đến--</option>
+                            <option value="" selected>-- Tất cả --</option>
+                            <option value="21.0278,105.8342">Hà Nội</option>
+                            <option value="10.8231,106.6297">Hồ Chí Minh</option>
+                            <option value="16.0544,108.2022">Đà Nẵng</option>
+                            <option value="20.8624,106.6830">Hải Phòng</option>
+                            <option value="10.0451,105.7469">Cần Thơ</option>
+                            <option value="16.4637,107.5909">Huế</option>
+                            <option value="12.2388,109.1966">Nha Trang</option>
+                            <option value="10.3460,107.0848">Vũng Tàu</option>
+                            <option value="20.9517,107.0533">Hạ Long</option>
+                            <option value="10.2270,103.9637">Phú Quốc</option>
+                            <!-- Các điểm đi khác -->
+                            <option value="22.8251,104.9830">Hà Giang</option>
+                            <option value="22.8860,104.3270">Lào Cai</option>
+                            <option value="22.3361,103.8448">Sapa (Lào Cai)</option>
+                            <option value="17.5369,106.4973">Quảng Bình</option>
+                            <option value="13.7800,109.2196">Quy Nhơn (Bình Định)</option>
+                            <option value="16.4637,107.5909">Huế</option>
+                            <option value="10.3460,107.0848">Vũng Tàu</option>
+                            <option value="10.0451,105.7469">Cần Thơ</option>
+                            <option value="9.1769,105.1496">Cà Mau</option>
+                            <!-- Các điểm đi khác -->
+                            <option value="22.8251,104.9830">Hà Giang</option>
+                            <option value="22.8860,104.3270">Lào Cai</option>
+                            <option value="22.3361,103.8448">Sapa (Lào Cai)</option>
+                            <option value="17.5369,106.4973">Quảng Bình</option>
+                            <option value="13.7800,109.2196">Quy Nhơn (Bình Định)</option>
+                            <option value="16.4637,107.5909">Huế</option>
+                            <option value="10.3460,107.0848">Vũng Tàu</option>
+                            <option value="10.0451,105.7469">Cần Thơ</option>
+                            <option value="9.1769,105.1496">Cà Mau</option>
+                          
+                        </select><br><br>
+                    
+                         SỐ NGÀY<br> 
+                         <div class="row">
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='radio' name='days' value='1-3' class="d-inline-block mr-2"> 1-3 ngày
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='radio' name='days' value='4-7' class="d-inline-block mr-2"> 4-7 ngày
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='radio' name='days' value='8-14' class="d-inline-block mr-2"> 8-14 ngày
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='radio' name='days' value='+14' class="d-inline-block mr-2"> Trên 14 ngày
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-3">
+                                    <label for="dateofDeparture">NGÀY ĐI</label>
+                                    <input type="date" class="border p-2 mx-10 " id="dateofDeparture">
+                            </div>
+                        </div>
+                        Dòng tour <br>
+                        <div class="row">
+                            
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='checkbox' name='days' value='CaoCao' class="d-inline-block mr-2"> Cao Cấp
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='checkbox' name='days' value='tieuChuan' class="d-inline-block mr-2"> Tiêu Chuẩn
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='checkbox' name='days' value='tietKiem' class="d-inline-block mr-2"> Tiết kiệm
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='checkbox' name='days' value='giaTot' class="d-inline-block mr-2"> Giá Tốt
+                                </label>
+                            </div>
+                        </div>
+
+                        Thông tin vận chuyển <br>
+                        <div class="row">
+                            
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='checkbox' name='days' value='mayBay' class="d-inline-block mr-2"> Máy bay
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="border p-2 d-block">
+                                    <input type='checkbox' name='days' value='oTo' class="d-inline-block mr-2"> Ô tô
+                                </label>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <label for="price">Giá phòng:</label>
+                            <input type="range" class="form-control-range" id="price" name="price" min="0" max="100000" oninput="updatePrice()">
+                            <output for="price" id="priceOutput">0</output>
+                        </div>
+                         <input type="submit" value="Tìm kiếm" onclick="searchTours()">
+
+                    </form>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-9 col-sm-6">
+                <div class="tour">
+                    <h3 class="text-center text-primary mt-5"><b>Du lịch Miền Bắc</b></h3>
+                    <hr>
+                   <p>Miền Bắc Việt Nam là điểm đến tuyệt vời với những di sản tự nhiên và văn hóa đặc sắc. <br>
+                     Đăng ký <span class="text-primary"><b>Tour Miền Bắc</b></span> bạn sẽ được khám phá các địa điểm nổi tiếng sau:</p>
+
+                    <div id="page1" class="row mb-3">
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/Sapa.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Sapa</b></div>
+                                    <div>Thời gian: <b>3 ngày 2 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">6.000.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_Sapa.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>32
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="Sapa.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/HaGiang.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Hà Giang</b></div>
+                                    <div>Thời gian: <b>2 ngày 2 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">4.000.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_HaGiang_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>64
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="HaGiang.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/CaoBang.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Cao Bằng</b></div>
+                                    <div>Thời gian: <b>6 ngày 6 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">15.000.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_CaoBang.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>128
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="CaoBang.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/TamDaoVinhPhuc.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Tam Đảo - Vĩnh Phúc</b></div>
+                                    <div>Thời gian: <b>3 ngày 2 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">3.900.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_TamDaoVP_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>256
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="TamDaoVinhPhuc.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/FanSiBang.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>FanSiPan</b></div>
+                                    <div>Thời gian: <b>3 ngày 2 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">4.590.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_FansiPan.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>512
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="FanSiPan.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/VinhHaLong.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Vịnh Hạ Long</b></div>
+                                    <div>Thời gian: <b>5 ngày 4 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">9.000.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_VinhHaLong_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>1024
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="VinhHaLong.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/HoGuomHaNoi.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Du lịch Hà Nội</b></div>
+                                    <div>Thời gian: <b>7 ngày 6 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">10.190.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_HaNoi_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>358
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="HaNoi.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/TayBac.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Tây Bắc</b></div>
+                                    <div>Thời gian: <b>7 ngày 6 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">10.390.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_TayBac_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>358
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="TayBac.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/MocChauSonLa.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Mộc Châu - Sơn La</b></div>
+                                    <div>Thời gian: <b>2 ngày 1 đêm</b></div>
+                                    <div>Nơi khởi hành: Huế</div>
+                                    <div>Giá: <b class="text-danger">1.990.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_MChauSLa_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>299
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="MocChauSonLa.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page2" class="row mb-3" style="display: none;">
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/VinhHaLong.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Vịnh Hạ Long</b></div>
+                                    <div>Thời gian: <b>3 ngày 3 đêm</b></div>
+                                    <div>Nơi khởi hành: Đà Nẵng</div>
+                                    <div>Giá: <b class="text-danger">4.000.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_VinhHaLong_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>999
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="VinhHaLong.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/CaoBang.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Cao Bằng</b></div>
+                                    <div>Thời gian: <b>3 ngày 2 đêm</b></div>
+                                    <div>Nơi khởi hành: Huế</div>
+                                    <div>Giá: <b class="text-danger">5.000.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_CaoBang.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>27
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="CaoBang.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <img src="../IMG/HoGuomHaNoi.jpg" alt="">
+                                <div class="content p-3">
+                                    <div><b>Hà Nội - Thủ Đô Văn Hiến</b></div>
+                                    <div>Thời gian: <b>7 ngày 6 đêm</b></div>
+                                    <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                                    <div>Giá: <b class="text-danger">10.190.000 VND</b></div>
+                                    <a class="btn btn-danger mt-3" href="../HTML/Tour_HaNoi_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                                    <div class="favourite">
+                                        <i class="fas fa-heart text-danger"></i>789
+                                    </div>
+                                    <div class="ChiTietTour">
+                                        <a class="btn btn-warning" href="HaNoi.html">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Thêm các tour khác ở đây -->
+                    <p class="text-warning">Hiện tại đang cập nhật thêm các tour!!!!!!!</p>
+                    </div>       
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <button id="btn1" class="btn btn-primary text-center active" onclick="DoiPage(1)">1</button>
+                        <button id="btn2" class="btn btn-primary text-center" onclick="DoiPage(2)">2</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    
+                <div class="col-md-2" id="gohan">
+                    <h2 class="mxh p-3">Mạng xã hội</h2>
+                    <ul class="id1">
+                        <li class="tiktok" id="k1"> 
+                            <a href="#" id="id2" class="logo-container" >
+                                <i class="fab fa-tiktok" id="id3"></i>
+                                <div id="fireworks"></div>
+                            </a>
+                        </li>
+                        <li class="twitter" id="k1"> 
+                            <a href="#" id="id2" class="logo-container" >
+                                <i class="fab fa-twitter" id="id3"></i>
+                                <div id="fireworks"></div>
+                            </a>
+                        </li>
+                        <li class="facebook" id="k1">
+                            <a href="https://www.facebook.com/thecuong.bui.710" class="logo-container" id="id2"  target="_blank">
+                                <i class="fab fa-facebook" id="id3"></i>
+                                <div id="fireworks"></div>
+                            </a>
+                        </li>
+                        <li class="instagram" id="k1"> 
+                            <a href="#" id="id2" class="logo-container" >
+                                <i class="fab fa-instagram" id="id3"></i>
+                                <div id="fireworks"></div>
+                            </a>
+                        </li>
+                        <li class="youtube" id="k1"> 
+                            <a href="#" id="id2" class="logo-container" >
+                                <i class="fab fa-youtube" id="id3"></i>
+                                <div id="fireworks"></div>
+                            </a>
+                        </li>
+                        <li class="github" id="k1"> 
+                            <a href="#" id="id2" class="logo-container" >
+                                <i class="fab fa-github" id="id3"></i>
+                                <div id="fireworks"></div>
+                            </a>
+                        </li>
+                        <li class="whatsapp" id="k1"> 
+                            <a href="#" id="id2" class="logo-container" >
+                                <i class="fab fa-whatsapp" id="id3"></i>
+                                <div id="fireworks"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <br> 
+                </div> 
+                <!--Footer Start-->
+                <div class="row" id="mcd">
+                    <div class="col-md-3">
+                        <b><h4 class="travel">Du lịch trong nước</h4></b>
+                        <div class="row">
+                            <div class="col-md-4 mx-2 "><span class="text1">Hà Nội <br>Hạ Long <br>Huế <br>Quảng Bình <br>Đà Nẵng <br>Quảng Nam <br>Nha Trang <br>Đà Lạt</span></div>
+                            <div class="col-md-4 mx-2"> <span class="text1">Phan Thiết <br>Phú Quốc <br>Cần Thơ <br>Hà Tiên <br>Bắc cạn <br>Hà Giang<br>Côn Đảo<br>Bến Tre</span></div>  
+                        </div>
+                        <br>
+                        <br>
+                        <h4 class="travel">Liên hệ</h4>
+                            <div class="col-md-12 mx-2 "><span class="text1">Hotline: 1900 1800 <br>Điện thoại: 024 7307 7979 <br>Địa chỉ: 80 Trần Hưng Đạo, Hoàn Kiếm, Hà Nội <br>Email : infor@tour.com</span></div> 
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <h4 class="travel">Du lịch ngoài nước</h4>
+                            <div class="col-md-4 mx-2 "><span class="text1">Hàn Quốc <br>Nhật Bản <br>Thái Lan <br>Mỹ <br>Úc <br>Na Uy <br>Thụy Sỹ<br>Đan Mạch</span></div>
+                            <div class="col-md-4 mx-2"><span class="text1">Brazil <br>Tây Ban Nha <br>Hà lan <br>Đức <br>Bồ Đồ Nha <br>Nga<br>Pháp<br>Maldives</span></div>   
+                            <br>                  
+                        </div>
+                        <br>
+                        <br>
+                        <h4 class="travel">Thông tin</h4>
+                            <div class="col-md-12 mx-2 "><span class="text1">Tạp chí du lịch <br>Cẩm nang du lịch <br>Tin tức <br>FAQs <br>Chính sách riêng tư <br>Thỏa thuân sử dụng</span></div> 
+    
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <h4 class="travel">Dòng Tour</h4>
+                            <div class="col-md-4 mx-2 "><span class="text1">Cao Cấp <br>Tiêu chuẩn <br>Tiết kiệm <br>Giá tốt</span></div>
+                            <h4 class="travel">Dịch vụ lẻ</h4>
+                            <div class="col-md-4 mx-2 "><span class="text1">Vé máy bay <br>Khách sạn <br>Combo du lịch</span></div>
+                         </div>
+                         <br>
+                         <br>
+                         <img src="../IMG/travel.jpg" class="img-fluid rounded-circle" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <h4 class="travel">Ứng dụng di động</h4>
+                            <div class="col-md-4 py-1 mx-y "><img src="../IMG/gg.png" class="img-fluid" alt=""><br><span text1>Android <img src="../IMG/qr.png" class="img-fluid" alt=""></span></div>
+                            <div class="col-md-4 py-1 mx-y"> <img src="../IMG/app.jpg"  alt="" class="img-fluid"><br><span class="px-2">IOS <img src="../IMG/qr.png" class="img-fluid" alt=""></span></div>
+                         </div>
+                         <br>
+                         <div>
+                            <form action="#" method="post">
+                                <input name="__RequestVerificationToken" type="hidden">
+                                <input type="text" name="EmailRegister" placeholder="Email của Quý khách" id="EmailRegisterFooter" required="" value="">
+                                <input type="submit" name="submit" class="sm" value="Gửi">
+                                <i class="fa-regular fa-envelope"></i>
+                            </form>
+                           
+                         </div>
+                         <br>
+                         <h4 class="travel">Tìm kiếm thông tin</h4>
+                         <form action="">
+                            <input type="text" placeholder="Tour du lịch, điểm đến..." name="search">
+                            <button type="submit"><i class="fa fa-search my-1 rounded border"></i></button>
+                          </form>
+                          <img src="../IMG/all.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+               </div>  
+               <!--Footer END-->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function DoiPage(pageNumber) {
+            var page1 = document.getElementById("page1");
+            var page2 = document.getElementById("page2");
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+
+            // Kiểm tra xem nút nào đã được chọn và hiển thị trang tương ứng
+            if (pageNumber === 1) {
+                page1.style.display = "flex";
+                page2.style.display = "none";
+                btn1.classList.add("active");
+                btn2.classList.remove("active");
+            } else if (pageNumber === 2) {
+                page1.style.display = "none";
+                page2.style.display = "flex";
+                btn1.classList.remove("active");
+                btn2.classList.add("active");
+            }
+        }
+        function showCoordinates(selectElement) {
+            var selectedValue = selectElement.value;
+            var city = selectElement.options[selectElement.selectedIndex].text;
+            if (selectedValue && selectedValue !== '') {
+                var departure = selectedValue.split(',');
+                var latitude = departure[0];
+                var longitude = departure[1];
+                document.getElementById('coordinates').innerHTML = "<a href='https://www.google.com/maps/search/?api=1&query=" + latitude + "," + longitude + "' target='_blank'>Địa điểm của " + city + "</a>";
+            } else {
+                document.getElementById('coordinates').innerHTML = '';
+            }
+        }
+
+        // Hàm cập nhật giá phòng
+        function updatePrice() {
+        // Lấy giá trị từ thanh trượt
+        var priceValue = document.getElementById("price").value;
+        // Chuyển đổi giá trị sang định dạng tiền tệ
+        var formattedPrice = formatCurrency(priceValue);
+        // Hiển thị giá phòng
+        document.getElementById("priceOutput").innerText = formattedPrice;
+    }
+
+    // Hàm để chuyển đổi số sang định dạng tiền tệ
+    function formatCurrency(value) {
+        var formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 0
+        });
+        return formatter.format(value);
+    }
+
+            
+        
+           
+        // Làm sạch tất cả các thông báo lỗi trước khi kiểm tra lại
+        var errorElements = document.querySelectorAll('.error-message');
+        errorElements.forEach(function(element) {
+            element.textContent = ''; 
+        });
+
+        function searchTours() {
+        var priceValue = document.getElementById("price").value;
+
+
+        var tours = document.querySelectorAll('.card');
+
+
+        tours.forEach(function(tour) {
+            var tourPrice = parseInt(tour.querySelector('.text-danger').innerText.replace(/[^\d]/g, ''));
+            if (tourPrice <= priceValue) {
+                tour.style.display = 'block';
+            } else {
+                tour.style.display = 'none';
+            }
+        });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+#img1{
+    width: 100px;
+    padding: 4px;
+}
+
+.location a{
+    text-decoration: none;
+}
+
+.col a{
+    text-decoration: none;
+    color: rgb(13, 33, 146);
+    font-weight: bold;
+}
+
+.col a:hover {
+    color: orange;
+}
+
+img{
+    border-radius: 10px;
+}
+
+#colm{
+    height: 500px auto;
+}
+
+.img3{
+    height: 150px;
+}
+
+.img4{
+    height: 350px;
+}
+
+.img5{
+    height: 250px;
+}
+
+p{
+    color: rgb(13, 33, 146);
+}
+
+.tt1{
+    color: black;
+}
+
+#list a{
+    text-decoration: none;
+    color: black;
+}
+
+#list a:hover{
+    color: blue;
+}
+

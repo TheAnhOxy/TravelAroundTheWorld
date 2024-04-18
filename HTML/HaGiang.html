@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/chitietTour.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="icon" href="../IMG/viet2.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <title>Hà Giang - Chi tiết Tour</title>
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="nav">
+            <nav class="navbar navbar-expand-md ">
+                <a href="../HTML/index.html"><img id="img1" src="../IMG/2.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Du Lịch</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="DulichTrongNuoc.html" class="dropdown-item">Du Lịch Trong Nước</a></li>
+                            <li><a href="DulichNgoaiNuoc.html" class="dropdown-item">Du Lịch Ngoài Nước</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Vận chuyển</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../HTML/VanChuyen.html" class="dropdown-item">Thuê Máy Bay</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item" sp><a href="Tintuc.html" class="nav-link">Tin Tức</a></li>
+                    <li class="nav-item" sp><a href="KhuyenMai.html" class="nav-link">Khuyến Mãi</a></li>
+                    <li class="nav-item" sp><a href="lienHe.html" class="nav-link">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <hr>
+        <!-- Cho biet vi tri hien tại của trang web -->
+        <div class="location">
+            <a href="index.html">Trang chủ</a> > 
+            <a href="DulichTrongNuoc.html">Du lịch trong nước</a> >
+            <a href="TourMienBac.html">Tour Miền Bắc</a> >
+            <a href="HaGiang.html">Hà Giang</a>
+        </div>
+        
+        <hr>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">
+                    <!-- Tiêu đề Tour -->
+                    <h1>Hà Giang: Vùng đất của những ngọn núi hung vĩ, những thửa ruộng bậc thang lấp lánh, và văn hóa dân tộc đa dạng, tạo nên bức tranh thiên nhiên hùng vĩ và sắc màu văn hóa độc đáo.</h1>
+                    <div class="thich border text-center">
+                        <i class="fas fa-heart text-danger"></i>64
+                    </div>
+                </div>
+                <div class="col text-end">
+                    <!-- Giá Tour và nút đăng ký -->
+                    <div><b id="price" class="text-danger">4.000.000 VND</b>/ khách</div>
+                    <a class="btn btn-danger mt-3 px-5 py-3" href="../HTML/Tour_HaGiang_MB.html"><i class="fas fa-cart-shopping"></i>Đặt ngay</a>
+                </div>
+            </div>
+    
+            <!-- Ảnh Minh họa -->
+            <div class="row mt-3">
+                <div class="col-7">
+                    <img class="img1 img-fluid a" src="../IMG/HaGiang.jpg" width="100%">
+                </div>
+                <div class="col-5">
+                    <div class="row mb-3">
+                        <div class="col"><img class="img2" src="../IMG/HaGiang1.jpg" width="100%"></div>
+                        <div class="col"><img class="img2" src="../IMG/HaGiang2.jpg" width="100%"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><img class="img3" src="../IMG/HaGiang3.jpg" width="100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chi tiết Tour -->
+            <div class="row mt-5">
+                <div class="col-5">
+                    <div class="card1 bg-light">
+                        <div>Khởi hành <b> 05/07/2024 - Giờ đi: 9:00</b></div>
+                        <div>Tập trung <b>06:00 ngày  05/07/2024</b></div>
+                        <div>Thời gian <b>2 ngày 2 đêm</b></div>
+                        <div>Nơi khởi hành <b>TP. Hồ Chí Minh</b></div>
+                        <div>Số chổ còn nhận <b>6</b></div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <!-- Hình ảnh địa điểm tham quan -->
+            <div class="row mt-5">
+                <h2 class="text-center"><b>Những địa điểm tham quan</b></h2>
+                <div class="slider">
+                    <div class="slides">
+                      <img src="../IMG/HaGiang1.jpg" alt="Địa điểm 1">
+                      <img src="../IMG/HaGiang2.jpg" alt="Địa điểm 2">
+                      <img src="../IMG/HaGiang3.jpg" alt="Địa điểm 3">
+                      <img src="../IMG/HaGiang.jpg" alt="Địa điểm 4">
+                      <img src="../IMG/HaGiang1.jpg" alt="Địa điểm 5">
+                      <img src="../IMG/HaGiang2.jpg" alt="Địa điểm 6">
+                      <img src="../IMG/HaGiang3.jpg" alt="Địa điểm 7">
+                      <img src="../IMG/HaGiang.jpg" alt="Địa điểm 8">
+                    </div>
+                  </div>
+            </div>
+
+            <hr>
+            <!-- 1 số gợi ý cho Khách Hàng -->
+            <div class="row mt-5">
+                <h2 class="text-center"><b>Quý khách có thể sẽ thích</b></h2>
+                <div class="col-md-4 col-sm-6 mt-2">
+                    <div class="card">
+                        <img src="../IMG/HoGuomHaNoi.jpg" alt="">
+                        <div class="content p-3">
+                            <div><b>Du lịch Hà Nội</b></div>
+                            <div>Thời gian: <b>7 ngày 6 đêm</b></div>
+                            <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                            <div>Giá: <b class="text-danger">10.190.000 VND</b></div>
+                            <a class="btn btn-danger mt-3" href="../HTML/Tour_HaNoi_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                            <div class="favourite">
+                                <i class="fas fa-heart text-danger"></i>358
+                            </div>
+                            <div class="ChiTietTour">
+                                <a class="btn btn-warning" href="HaNoi.html">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mt-2">
+                    <div class="card">
+                        <img src="../IMG/TayBac.jpg" alt="">
+                        <div class="content p-3">
+                            <div><b>Tây Bắc</b></div>
+                            <div>Thời gian: <b>7 ngày 6 đêm</b></div>
+                            <div>Nơi khởi hành: TP.Hồ Chí Minh</div>
+                            <div>Giá: <b class="text-danger">10.390.000 VND</b></div>
+                            <a class="btn btn-danger mt-3" href="../HTML/Tour_TayBac_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                            <div class="favourite">
+                                <i class="fas fa-heart text-danger"></i>358
+                            </div>
+                            <div class="ChiTietTour">
+                                <a class="btn btn-warning" href="TayBac.html">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mt-2">
+                    <div class="card">
+                        <img src="../IMG/MocChauSonLa.jpg" alt="">
+                        <div class="content p-3">
+                            <div><b>Mộc Châu - Sơn La</b></div>
+                            <div>Thời gian: <b>2 ngày 1 đêm</b></div>
+                            <div>Nơi khởi hành: Huế</div>
+                            <div>Giá: <b class="text-danger">1.990.000 VND</b></div>
+                            <a class="btn btn-danger mt-3" href="../HTML/Tour_MChauSLa_MB.html"><i class="fas fa-cart-shopping"></i> Đặt ngay</a>
+                            <div class="favourite">
+                                <i class="fas fa-heart text-danger"></i>299
+                            </div>
+                            <div class="ChiTietTour">
+                                <a class="btn btn-warning" href="MocChauSonLa.html">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+                    
+            <div class="col-md-2" id="gohan">
+                <h2 class="mxh p-3">Mạng xã hội</h2>
+                <ul class="id1">
+                    <li class="tiktok" id="k1"> 
+                        <a href="#" id="id2" class="logo-container" >
+                            <i class="fab fa-tiktok" id="id3"></i>
+                            <div id="fireworks"></div>
+                        </a>
+                    </li>
+                    <li class="twitter" id="k1"> 
+                        <a href="#" id="id2" class="logo-container" >
+                            <i class="fab fa-twitter" id="id3"></i>
+                            <div id="fireworks"></div>
+                        </a>
+                    </li>
+                    <li class="facebook" id="k1">
+                        <a href="https://www.facebook.com/thecuong.bui.710" class="logo-container" id="id2"  target="_blank">
+                            <i class="fab fa-facebook" id="id3"></i>
+                            <div id="fireworks"></div>
+                        </a>
+                    </li>
+                    <li class="instagram" id="k1"> 
+                        <a href="#" id="id2" class="logo-container" >
+                            <i class="fab fa-instagram" id="id3"></i>
+                            <div id="fireworks"></div>
+                        </a>
+                    </li>
+                    <li class="youtube" id="k1"> 
+                        <a href="#" id="id2" class="logo-container" >
+                            <i class="fab fa-youtube" id="id3"></i>
+                            <div id="fireworks"></div>
+                        </a>
+                    </li>
+                    <li class="github" id="k1"> 
+                        <a href="#" id="id2" class="logo-container" >
+                            <i class="fab fa-github" id="id3"></i>
+                            <div id="fireworks"></div>
+                        </a>
+                    </li>
+                    <li class="whatsapp" id="k1"> 
+                        <a href="#" id="id2" class="logo-container" >
+                            <i class="fab fa-whatsapp" id="id3"></i>
+                            <div id="fireworks"></div>
+                        </a>
+                    </li>
+                </ul>
+                <br> 
+            </div> 
+            <!--Footer Start-->
+            <div class="row" id="mcd">
+                <div class="col-md-3">
+                    <b><h4 class="travel">Du lịch trong nước</h4></b>
+                    <div class="row">
+                        <div class="col-md-4 mx-2 "><span class="text1">Hà Nội <br>Hạ Long <br>Huế <br>Quảng Bình <br>Đà Nẵng <br>Quảng Nam <br>Nha Trang <br>Đà Lạt</span></div>
+                        <div class="col-md-4 mx-2"> <span class="text1">Phan Thiết <br>Phú Quốc <br>Cần Thơ <br>Hà Tiên <br>Bắc cạn <br>Hà Giang<br>Côn Đảo<br>Bến Tre</span></div>  
+                    </div>
+                    <br>
+                    <br>
+                    <h4 class="travel">Liên hệ</h4>
+                        <div class="col-md-12 mx-2 "><span class="text1">Hotline: 1900 1800 <br>Điện thoại: 024 7307 7979 <br>Địa chỉ: 80 Trần Hưng Đạo, Hoàn Kiếm, Hà Nội <br>Email : infor@tour.com</span></div> 
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <h4 class="travel">Du lịch ngoài nước</h4>
+                        <div class="col-md-4 mx-2 "><span class="text1">Hàn Quốc <br>Nhật Bản <br>Thái Lan <br>Mỹ <br>Úc <br>Na Uy <br>Thụy Sỹ<br>Đan Mạch</span></div>
+                        <div class="col-md-4 mx-2"><span class="text1">Brazil <br>Tây Ban Nha <br>Hà lan <br>Đức <br>Bồ Đồ Nha <br>Nga<br>Pháp<br>Maldives</span></div>   
+                        <br>                  
+                    </div>
+                    <br>
+                    <br>
+                    <h4 class="travel">Thông tin</h4>
+                        <div class="col-md-12 mx-2 "><span class="text1">Tạp chí du lịch <br>Cẩm nang du lịch <br>Tin tức <br>FAQs <br>Chính sách riêng tư <br>Thỏa thuân sử dụng</span></div> 
+
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <h4 class="travel">Dòng Tour</h4>
+                        <div class="col-md-4 mx-2 "><span class="text1">Cao Cấp <br>Tiêu chuẩn <br>Tiết kiệm <br>Giá tốt</span></div>
+                        <h4 class="travel">Dịch vụ lẻ</h4>
+                        <div class="col-md-4 mx-2 "><span class="text1">Vé máy bay <br>Khách sạn <br>Combo du lịch</span></div>
+                     </div>
+                     <br>
+                     <br>
+                     <img src="../IMG/travel.jpg" class="img-fluid rounded-circle" alt="">
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <h4 class="travel">Ứng dụng di động</h4>
+                        <div class="col-md-4 py-1 mx-y "><img src="../IMG/gg.png" class="img-fluid" alt=""><br><span text1>Android <img src="../IMG/qr.png" class="img-fluid" alt=""></span></div>
+                        <div class="col-md-4 py-1 mx-y"> <img src="../IMG/app.jpg"  alt="" class="img-fluid"><br><span class="px-2">IOS <img src="../IMG/qr.png" class="img-fluid" alt=""></span></div>
+                     </div>
+                     <br>
+                     <div>
+                        <form action="#" method="post">
+                            <input name="__RequestVerificationToken" type="hidden">
+                            <input type="text" name="EmailRegister" placeholder="Email của Quý khách" id="EmailRegisterFooter" required="" value="">
+                            <input type="submit" name="submit" class="sm" value="Gửi">
+                            <i class="fa-regular fa-envelope"></i>
+                        </form>
+                       
+                     </div>
+                     <br>
+                     <h4 class="travel">Tìm kiếm thông tin</h4>
+                     <form action="">
+                        <input type="text" placeholder="Tour du lịch, điểm đến..." name="search">
+                        <button type="submit"><i class="fa fa-search my-1 rounded border"></i></button>
+                      </form>
+                      <img src="../IMG/all.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-3">
+                </div>
+           </div>  
+           <!--Footer END-->
+        </div>
+
+
+    </div>
+            
+    <script>
+        $(document).ready(function(){
+          var slides = $(".slides");
+          var slideWidth = $(".slides img").width();
+          var slidesCount = slides.find("img").length;
+          var currentSlide = 1;
+        
+          $(".slider").width(slideWidth * slidesCount);
+        
+          function moveNext() {
+            if (currentSlide < slidesCount-1) {
+              currentSlide++;
+            } else {
+              currentSlide = 1; // Chuyển đến ảnh đầu tiên sau khi đến ảnh cuối cùng
+              slides.css("transform", "translateX(0px)"); // Di chuyển về vị trí ban đầu
+            }
+            slides.css("transform", "translateX(" + (-slideWidth * (currentSlide - 1)) + "px)");
+          }
+        
+          setInterval(moveNext, 1500); // Tự động chuyển đến ảnh tiếp theo sau mỗi 1,5 giây
+        });
+        </script>
+         
+</body>
+</html>

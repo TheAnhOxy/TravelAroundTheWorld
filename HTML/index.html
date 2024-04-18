@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="../IMG/viet2.jpg" type="image/png">
+    <script src="https://kit.fontawesome.com/2b59b5a428.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="nav">
+        <nav class="navbar navbar-expand-md">
+            <a href="../HTML/index.html"><img id="img1" src="../IMG/2.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Du Lịch</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../HTML/DulichTrongNuoc.html" class="dropdown-item">Du Lịch Trong Nước</a></li>
+                            <li><a href="../HTML/DulichNgoaiNuoc.html" class="dropdown-item">Du Lịch Ngoài Nước</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Vận chuyển</a>
+                      <ul class="dropdown-menu">
+                          <li><a href="../HTML/VanChuyen.html" class="dropdown-item">Thuê Máy Bay</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" sp><a href="Tintuc.html" class="nav-link">Tin Tức</a></li>
+                    <li class="nav-item" sp><a href="KhuyenMai.html" class="nav-link">Khuyến Mãi</a></li>
+                    <li class="nav-item" sp><a href="lienHe.html" class="nav-link">Liên Hệ</a></li>
+                </ul>
+                <input id="in1" type="text" placeholder="Bắt đầu tìm kiếm ...">
+                <button id="bt1">Tìm</button>
+                <div id="modal">
+                    <button
+                        class="btn btn-img"
+                        data-bs-toggle="modal"
+                        data-bs-target="#userForm"
+                    >
+                        <img src="../IMG/log.jpg" alt="log" class="img-fluid rounded-circle" style="width: 40px; height: 40px; object-fit: cover;" title="Login">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+         <!-- chuyển động ảnh -->
+         <div class="header">
+            <div class="chayline">
+                <Marquee id="line"> Chào mừng các bạn đã đến với GoTour  </Marquee>
+            </div>
+            <div class="slides">
+                <!-- radio Start begin -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- radio Start end -->
+                <!-- slide images start -->
+                <div class="slide first">
+                    <img src="../IMG/dl1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../IMG/dl2.jpg" alt="">
+                </div>
+                <div class="slide" id="a2">
+                    <img src="../IMG/dl3.jpg" alt="">
+                </div>
+                 <!-- slide images end -->
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+               <!-- manual navigation end -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn "></label>
+                    <label for="radio2" class="manual-btn "></label>
+                    <label for="radio3" class="manual-btn "></label>
+                </div>
+               <!-- manual navigation end -->
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 3){
+                        counter = 1;
+                    }
+                },5000);
+            </script>
+             
+        </div>
+        <!-- #Chuyển động ảnh END -->
+
+        
+        <!-- <div class="slider1">
+          <div class="slides1">
+              <div class="slide1"><img src="../IMG/ChauA.jpg" alt=""></div>
+              <div class="slide1"><img src="../IMG/ChauAu.jpg" alt=""></div>
+              <div class="slide1"><img src="../IMG/DulichMienNam.jpg" alt=""></div>
+              <div class="slide1"><img src="../IMG/ChauMi.jpg" alt=""></div>
+          </div>
+      </div> -->
+
+      <script>
+//           document.addEventListener("DOMContentLoaded", function() {
+//     const slider = document.querySelector('.slider1');
+//     const slides = document.querySelector('.slides1');
+//     const slide = document.querySelectorAll('.slide1');
+
+//     let counter = 0;
+//     const slideWidth = slide[0].clientWidth;
+
+//     setInterval(function() {
+//         slides.style.transition = "none";
+//         // Di chuyển slide tiếp theo về phía trái
+//         slides.style.transform = `translateX(${-slideWidth}px)`;
+//         setTimeout(function() {
+//             slides.style.transition = "transform 0.5s ease-in-out";
+//             // Di chuyển slide đầu tiên xuống cuối danh sách
+//             slides.appendChild(slides.firstElementChild);
+//             // Khôi phục vị trí của slide về trái (0px)
+//             // slides.style.transform = `translateX(0)`;
+//         }, 100); 
+//     }, 3000); // Thay đổi số 3000 để điều chỉnh thời gian chuyển đổi giữa các ảnh
+// });
+// Lấy danh sách tất cả các tour
+// Hàm tìm kiếm khi người dùng nhấn nút "Tìm"
+    function performSearch() {
+        var keyword = document.getElementById('in1').value.toLowerCase();
+        var found = false; // Biến này để kiểm tra xem có tour nào khớp với từ khóa tìm kiếm hay không
+
+        allTours.forEach(function(tour) {
+            var tourName = tour.querySelector('.content b').textContent.toLowerCase();
+
+            if (tourName.includes(keyword)) {
+                tour.parentNode.style.display = ''; // Hiển thị tour nếu khớp với từ khóa
+                found = true; // Đặt biến found thành true nếu có tour khớp
+            } else {
+                tour.parentNode.style.display = 'none'; // Ẩn tour nếu không khớp với từ khóa
+            }
+        });
+
+        // Hiển thị thông báo nếu không tìm thấy kết quả
+        if (!found) {
+            alert("Không tìm thấy kết quả phù hợp!");
+        }
+    }
+
+    // Lấy tham chiếu đến nút tìm kiếm
+    var searchButton = document.getElementById('bt1');
+
+    searchButton.addEventListener('click', function() {
+        performSearch(); // Gọi hàm thực hiện tìm kiếm khi nút được nhấn
+    });
+//       </script>
+
+
+
+        <!-- Bổ sung Body Start -->
+        
+        <div class="special-offers">
+          <div class="offer-title text-center mb-4 mt-4" style="font-style: oblique;">
+            <h2>Gói ưu đãi đặc biệt</h2>
+          </div>
+          <div class="offer" style="background-image: url(../IMG/QuyNhon1.jpg);">
+            <h3>Combo Quy Nhơn 3N2Đ: Vé máy bay khứ hồi + Khách sạn Mường Thanh Quy Nhơn 4 sao (Bao gồm Ăn sáng)</h3>
+            <p>Quy Nhơn: Combo 3N2Đ Vé máy bay khứ hồi + 2 đêm khách sạn Mường Thanh Quy Nhơn 4 sao (Đã bao gồm ăn sáng)</p>
+            <p class="address">02 Nguyễn Huệ, Phường Lê Lợi, Quy Nhon, Binh Dinh, Viet Nam</p>
+            <p class="price">Giá chỉ từ 2.790.000 ₫/khách</p>
+            <p class="date">Ngày đi 07/05/2024</p>
+            <p class="included">Đã bao gồm trong giá</p>
+            <a href="../HTML/uudai1.html"><button class="book-now-btn">Đặt Ngay</button></a>
+          </div>
+          
+          <div class="offer" style="background-image:url(../IMG/QuyNhon2.jpg) ;">
+            <h3>Combo Quy Nhơn 3N2Đ: Vé máy bay khứ hồi + Khách sạn Hoàng Yến 4 sao (Bao gồm Ăn sáng)</h3>
+            <p>Quy Nhơn: Combo 3N2Đ Vé máy bay khứ hồi + 2 đêm khách sạn Hoàng Yến Quy Nhơn 4 sao (Đã bao gồm ăn sáng)</p>
+            <p class="address">5 An Dương Vương, Nguyễn Văn Cừ, Quy Nhon, Binh Dinh, Viet Nam</p>
+            <p class="price">Giá chỉ từ 2.890.000 ₫/khách</p>
+            <p class="date">Ngày đi 11/04/2024</p>
+            <p class="included">Đã bao gồm trong giá</p>
+            <a href="../HTML/uudai2.html"><button class="book-now-btn">Đặt Ngay</button></a>
+          </div>
+          
+          <div class="offer" style="background-image: url(../IMG/QuyNhon3.jpg);">
+            <h3>Quy Nhơn: Vé máy bay khứ hồi + Phòng tại khách sạn LakeView 5 sao (Đã gồm ăn sáng)</h3>
+            <p>Quy Nhơn: Combo 3N2Đ Vé máy bay khứ hồi + 2 đêm khách sạn LakeView Quy Nhơn 5 sao (Đã bao gồm ăn sáng)</p>
+            <p class="address">1H1 Nguyễn Thị Định, Nguyễn Văn Cừ, Thành phố Quy Nhơn, Quy Nhon, Binh Dinh, Viet Nam</p>
+            <p class="price">Giá chỉ từ 4.090.000 ₫/khách</p>
+            <p class="date">Ngày đi 11/04/2024</p>
+            <p class="included">Đã bao gồm trong giá</p>
+            <a href="../HTML/uudai3.html"><button class="book-now-btn">Đặt Ngay</button></a>
+          </div>
+          <a href="" ><button style="background-color:black ; border-radius: 21px;color: white;">Xem tất cả...</button></a>
+        </div>
+                
+        <!-- Địa điểm yêu thích -->
+<!-- Trong nước -->
+<section class="grid">
+  <div class="favorite-title text-center mb-4 mt-4" style="font-style: oblique;">
+    <h2>Điểm đến yêu thích</h2>
+  </div>
+  <div class="row">
+    <!-- Destination Card - Hanoi -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Hà Nội</h5>
+          <p class="card-text">Hà Nội</p>
+          <a href="../HTML/HaNoi.html"><img src="../IMG/Hanoi.jpg" alt=""></a>
+          <p class="card-text">Đã có 20.156 lượt khách</p>
+        
+        </div>
+      </div>
+    </div>
+    <!-- Destination Card - Da Nang -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Đà Nẵng</h5>
+          <p class="card-text">Đà Nẵng</p>
+          <a href="../HTML/DaNang.html"><img src="../IMG/DaNang1.jpg" alt=""></a>
+          <p class="card-text">Đã có 14.528 lượt khách</p>
+        </div>
+      </div>
+    </div>
+    <!-- Destination Card - Da Lat -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Đà Lạt</h5>
+          <p class="card-text">Đà Lạt</p>
+          <a href="../HTML/DaLat.html"><img src="../IMG/dalat.jpg" alt=""></a>
+          <p class="card-text">Đã có 32.101 lượt khách</p>
+        </div>
+      </div>
+    </div>
+    <!-- Destination Card - Phu Quoc -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Phú Quốc</h5>
+          <p class="card-text">Phú Quốc</p>
+          <a href="../HTML/PhuQuoc.html"><img src="../IMG/PhuQuoc.jpg" alt=""></a>
+          <p class="card-text">Đã có  15.965 lượt khách</p> <!-- Replace xxx with actual number of visitors -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ngoài nước -->
+<section class="grid">
+  <div class="row">
+    <!-- Destination Card - NhatBan -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Nhật Bản</h5>
+          <p class="card-text">Nhật Bản</p>
+          <a href="../HTML/NhatBan.html"><img src="../IMG/Japan.jpg" alt=""></a>
+          <p class="card-text">Đã có 1945 lượt khách</p>
+        </div>
+      </div>
+    </div>
+    <!-- Destination Card - Hàn quốc -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Hàn Quốc</h5>
+          <p class="card-text">Hàn Quốc</p>
+          <a href="../HTML/HanQuoc.html"><img src="../IMG/hanquoc.webp" alt=""></a>
+          <p class="card-text">Đã có 5698 lượt khách</p>
+        </div>
+      </div>
+    </div>
+    <!-- Destination Card - Mĩ -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Mỹ </h5>
+          <p class="card-text">Mỹ</p>
+          <a href="../HTML/NewYork.html"><img src="../IMG/mỹ.jpg" alt="" style="height: 200px;"></a>
+          <p class="card-text">Đã có 4368 lượt khách</p>
+        
+        </div>
+      </div>
+    </div>
+    <!-- Destination Card - Nga -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Nga</h5>
+          <p class="card-text">Nga</p>
+          <a href="../HTML/Nga.html"><img src="../IMG/Nga1.jpg" alt="" style="height: 200px;"></a>
+          <p class="card-text">Đã có 506 lượt khách</p> <!-- Replace xxx with actual number of visitors -->
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Favorite Destinations -->
+        <!--Why-->
+        <section class="grid">
+          <div class="why_title text-center mb-4 mt-4" style="font-style: oblique;">
+              <h2>Vì sao lại chọn GoTour</h2>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+              <div class="col">
+                  <div class="why">
+                      <div class="item item1">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          <h2>Thanh toán</h2>
+                          <p>An toàn và linh hoạt</p>
+                          <br><br><br>
+                          <p>"Khách hàng dễ dàng thanh toán bằng nhiều <br>cách, từ việc sử dụng thẻ tín dụng cho đến chuyển <br> khoản trực tuyến 
+                            hoặc thanh toán tiền mặt tại văn phòng của chúng tôi."</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="why">
+                      <div class="item item2">
+                        <i class="fa-solid fa-globe"></i>
+                          <h2>Đặt tour</h2>
+                          <p>Dễ dàng và nhanh chóng</p>
+                          <br><br><br>
+                            <p>"Chỉ cần vài bước đơn giản, bạn có <br>
+                              thể dễ dàng đặt tour mong muốn và nhận được xác nhận ngay lập tức."</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="why">
+                      <div class="item item3">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                          <h2>Giá cả</h2>
+                          <p>Luôn có mức giá tốt nhất</p>
+                          <br><br><br>
+                            <p>"Chúng tôi cam kết cung cấp các tour với mức <br>
+                              giá cạnh tranh nhất trên thị trường. Với chính sách  <br>
+                              giá linh hoạt và ưu đãi đặc biệt, bạn luôn có thể tin tưởng vào sự hài lòng khi lựa chọn GoTour."</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="why">
+                      <div class="item item4">
+                        <i class="fa-solid fa-phone-volume"></i>
+                          <h2>Hỗ trợ</h2>
+                          <p>Chuyên nghiệp và nhiệt tình</p>
+                          <br><br><br>
+                            <p>"Đội ngũ hỗ trợ chuyên nghiệp và nhiệt tình của <br>
+                              chúng tôi luôn sẵn sàng để giải đáp mọi thắc mắc <br>
+                              và hỗ trợ bạn trong suốt quá trình du lịch."</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="why">
+                      <div class="item item5">
+                        <i class="fa-solid fa-star"></i>
+                          <h2>Chất lượng</h2>
+                          <p>Đảm bảo và uy tín</p>
+                          <br><br><br>
+                            <p>"Từ dịch vụ đến trải nghiệm du lịch, chúng <br>
+                              tôi không ngừng nâng cao và cải thiện để mang lại <br>
+                               trải nghiệm tuyệt vời nhất cho khách hàng."</p>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="why">
+                      <div class="item item6">
+                        <i class="fa-solid fa-comments"></i>
+                          <h2>Đánh giá</h2>
+                          <p>Phản hồi tích cực từ khách hàng</p>
+                          <br><br><br>
+                          <p>"Phản hồi tích cực từ khách hàng là nguồn động <br>viên 
+                            lớn nhất cho chúng tôi. Với hàng loạt đánh giá  <br>
+                            tích cực và những lời khen ngợi, chúng tôi tự hào là đối tác du lịch
+                            tin cậy của bạn."</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+        <!--EndWhy-->
+
+        <!-- Bổ sung Body End -->
+
+
+
+        <!--footer start-->
+        <div class="row">
+                    
+          <div class="col-md-2" id="gohan">
+              <h2 class="mxh p-3">Mạng xã hội</h2>
+              <ul class="id1">
+                  <li class="tiktok" id="k1"> 
+                      <a href="https://www.tiktok.com/@thekhanh1104" id="id2" class="logo-container" >
+                          <i class="fab fa-tiktok" id="id3"></i>
+                          <div id="fireworks"></div>
+                      </a>
+                  </li>
+                  <li class="twitter" id="k1"> 
+                      <a href="" id="id2" class="logo-container" >
+                          <i class="fab fa-twitter" id="id3"></i>
+                          <div id="fireworks"></div>
+                      </a>
+                  </li>
+                  <li class="facebook" id="k1">
+                      <a href="https://www.facebook.com/khanh.min.33" class="logo-container" id="id2"  target="_blank">
+                          <i class="fab fa-facebook" id="id3"></i>
+                          <div id="fireworks"></div>
+                      </a>
+                  </li>
+                  <li class="instagram" id="k1"> 
+                      <a href="https://www.instagram.com/khanhduong_1104/" id="id2" class="logo-container" >
+                          <i class="fab fa-instagram" id="id3"></i>
+                          <div id="fireworks"></div>
+                      </a>
+                  </li>
+                  <li class="youtube" id="k1"> 
+                      <a href="#" id="id2" class="logo-container" >
+                          <i class="fab fa-youtube" id="id3"></i>
+                          <div id="fireworks"></div>
+                      </a>
+                  </li>
+                  <li class="github" id="k1"> 
+                      <a href="#" id="id2" class="logo-container" >
+                          <i class="fab fa-github" id="id3"></i>
+                          <div id="fireworks"></div>
+                      </a>
+                  </li>
+                  <li class="whatsapp" id="k1"> 
+                      <a href="#" id="id2" class="logo-container" >
+                          <i class="fab fa-whatsapp" id="id3"></i>
+                          <div id="fireworks"></div>
+                      </a>
+                  </li>
+              </ul>
+              <br> 
+          </div> 
+          <!--Footer Start-->
+          <div class="row" id="mcd">
+              <div class="col-md-3">
+                  <b><h4 class="travel">Du lịch trong nước</h4></b>
+                  <div class="row">
+                      <div class="col-md-4 mx-2 "><span class="text1">Hà Nội <br>Hạ Long <br>Huế <br>Quảng Bình <br>Đà Nẵng <br>Quảng Nam <br>Nha Trang <br>Đà Lạt</span></div>
+                      <div class="col-md-4 mx-2"> <span class="text1">Phan Thiết <br>Phú Quốc <br>Cần Thơ <br>Hà Tiên <br>Bắc cạn <br>Hà Giang<br>Côn Đảo<br>Bến Tre</span></div>  
+                  </div>
+                  <br>
+                  <br>
+                  <h4 class="travel">Liên hệ</h4>
+                      <div class="col-md-12 mx-2 "><span class="text1">Hotline: 1900 1800 <br>Điện thoại: 024 7307 7979 <br>Địa chỉ: 80 Trần Hưng Đạo, Hoàn Kiếm, Hà Nội <br>Email : infor@tour.com</span></div> 
+              </div>
+              <div class="col-md-3">
+                  <div class="row">
+                      <h4 class="travel">Du lịch ngoài nước</h4>
+                      <div class="col-md-4 mx-2 "><span class="text1">Hàn Quốc <br>Nhật Bản <br>Thái Lan <br>Mỹ <br>Úc <br>Na Uy <br>Thụy Sỹ<br>Đan Mạch</span></div>
+                      <div class="col-md-4 mx-2"><span class="text1">Brazil <br>Tây Ban Nha <br>Hà lan <br>Đức <br>Bồ Đồ Nha <br>Nga<br>Pháp<br>Maldives</span></div>   
+                      <br>                  
+                  </div>
+                  <br>
+                  <br>
+                  <h4 class="travel">Thông tin</h4>
+                      <div class="col-md-12 mx-2 "><span class="text1">Tạp chí du lịch <br>Cẩm nang du lịch <br>Tin tức <br>FAQs <br>Chính sách riêng tư <br>Thỏa thuân sử dụng</span></div> 
+
+              </div>
+              <div class="col-md-3">
+                  <div class="row">
+                      <h4 class="travel">Dòng Tour</h4>
+                      <div class="col-md-4 mx-2 "><span class="text1">Cao Cấp <br>Tiêu chuẩn <br>Tiết kiệm <br>Giá tốt</span></div>
+                      <h4 class="travel">Dịch vụ lẻ</h4>
+                      <div class="col-md-4 mx-2 "><span class="text1">Vé máy bay <br>Khách sạn <br>Combo du lịch</span></div>
+                   </div>
+                   <br>
+                   <br>
+                   <img src="../IMG/travel.jpg" class="img-fluid rounded-circle" alt="">
+              </div>
+              <div class="col-md-3">
+                  <div class="row">
+                      <h4 class="travel">Ứng dụng di động</h4>
+                      <div class="col-md-4 py-1 mx-y "><img src="../IMG/gg.png" class="img-fluid" alt=""><br><span text1>Android <img src="../IMG/qr.png" class="img-fluid" alt=""></span></div>
+                      <div class="col-md-4 py-1 mx-y"> <img src="../IMG/app.jpg"  alt="" class="img-fluid"><br><span class="px-2">IOS <img src="../IMG/qr.png" class="img-fluid" alt=""></span></div>
+                   </div>
+                   <br>
+                   <div>
+                      <form action="#" method="post">
+                          <input name="__RequestVerificationToken" type="hidden">
+                          <input type="text" name="EmailRegister" placeholder="Email của Quý khách" id="EmailRegisterFooter" required="" value="">
+                          <input type="submit" name="submit" class="sm" value="Gửi">
+                          <i class="fa-regular fa-envelope"></i>
+                      </form>
+                     
+                   </div>
+                   <br>
+                   <h4 class="travel">Tìm kiếm thông tin</h4>
+                   <form action="">
+                      <input type="text" placeholder="Tour du lịch, điểm đến..." name="search">
+                      <button type="submit"><i class="fa fa-search my-1 rounded border"></i></button>
+                    </form>
+                    <img src="../IMG/all.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-3">
+              </div>
+         </div>  
+         <!--Footer END-->
+      </div>
+
+        <!--footer end-->
+
+         <!-- modal -->
+    <div class="modal" id="userForm">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <ul class="nav fs-3">
+                <li class="nav-item">
+                  <button
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#loginForm"
+                  >
+                    Login
+                  </button>
+                </li>
+                <li
+                  class="nav-item d-flex align-items-center"
+                  style="color: gray; margin-right: 1rem"
+                >
+                  /
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#registerForm"
+                  >
+                    Register
+                  </button>
+                </li>
+              </ul>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="tab-content" id="tabConent">
+                <div class="tab-pane show active" id="loginForm">
+                  <p class="text-muted">
+                    Vui lòng đăng nhập trước khi đặt tour để tích lũy điểm, cơ hội
+                    nhận thêm nhiều ưu đãi từ Website
+                  </p>
+                  <form class="needs-validation" novalidate>
+                    <div class="row g-2">
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailInput"
+                            placeholder="Email"
+                            required
+                          />
+                          <label for="emailInput">Email</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="passwordInput"
+                            placeholder="Password"
+                            required
+                          />
+                          <label for="passwordInput">Password</label>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text-muted mt-2 fs-6">Quên mật khẩu?</p>
+                    <div class="d-grid">
+                      <button
+                        style="
+                          background-color: rgb(232, 127, 90);
+                          border: 1px solid rgb(232, 127, 90);
+        
+                        "
+                        type="submit"
+                        class="btn text-white"
+                      >
+                        ĐĂNG NHẬP
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane" id="registerForm">
+                  <form class="needs-validation" novalidate>
+                    <div class="row gx-1 gy-2">
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nameInput"
+                            placeholder="Fullname"
+                            required
+                          />
+                          <label for="nameInput">Fullname</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="phoneInput"
+                            placeholder="Phonenumber"
+                            required
+                          />
+                          <label for="phoneInput">Phonenumber</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <select id="genderSelector" class="form-select" placeholder="Choose your gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                          <label for="genderSelector">Choose your gender</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="emailInput2"
+                            placeholder="Email"
+                            required
+                          />
+                          <label for="emailInput2">Email</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="phoneInput"
+                            placeholder="passwordInput2"
+                            required
+                          />
+                          <label for="passwordInput2">Password</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="phoneInput"
+                            placeholder="passwordVerifyInput"
+                            required
+                          />
+                          <label for="passwordVerifyInput">Verify password</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <select id="citySelector" class="form-select" required>
+                            <option value="Ho Chi Minh">Hồ Chí Minh</option>
+                            <option value="Ha Noi">Ha Noi</option>
+                          </select>
+                          <label for="citySelector">Choose your city</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                          <select id="districtSelector" class="form-select" required>
+                            <option value="1">1</option>
+                            <option value="4">4</option>
+                            <option value="Gò Vấp">Gò Vấp</option>
+                          </select>
+                          <label for="districtSelector">Choose your district</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="text" id="addressInput" class="form-control" placeholder="Address" required>
+                          <label for="addressInput">Address</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="date" id="dobInput" class="form-control" required>
+                          <label for="dobInput">Date of birth</label>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-2 text-muted">Tôi đã đọc và đồng ý với <span style="color: rgb(232, 127, 90);">CHÍNH SÁCH</span> của chương trình</p>
+                    <div class="d-grid">
+                      <button type="submit" class="btn text-white" style="background-color: rgb(232, 127, 90);">ĐĂNG KÝ</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+        
+    </div>
+    <!-- hết modal -->
+
+   
+    
+</body>
+</html>
